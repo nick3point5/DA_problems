@@ -3,5 +3,13 @@
 		"test": "deno test --allow-read --allow-write --allow-run",
 		"lint": "deno lint --allow-read --allow-write",
 		"format": "deno fmt --allow-read --allow-write"
-	}
+	},
+	"fmt": {
+    "options": {
+      "semiColons": false,
+			"indentWidth": 2,
+			"useTabs": true,
+			"lineWidth": 140
+    }
+  }
 }
