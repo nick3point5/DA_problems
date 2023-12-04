@@ -13,7 +13,6 @@ export class Node {
 	 * @param {Node} next - The next Node of the constructor defaults to null.
 	 */
 	constructor() {
-		
 	}
 }
 /**
@@ -25,7 +24,6 @@ export class Node {
  */
 export class Stack {
 	constructor() {
-		
 	}
 	/**
 	 * Pushes a new value onto the top of the stack.
@@ -34,7 +32,6 @@ export class Stack {
 	 * @returns {void}
 	 */
 	push(value) {
-		
 	}
 	/**
 	 * Pops the top element from the stack and returns it.
@@ -42,6 +39,5 @@ export class Stack {
 	 * @return {number} The value of the element popped from the stack, or null if the stack is empty.
 	 */
 	pop() {
-		
 	}
 }

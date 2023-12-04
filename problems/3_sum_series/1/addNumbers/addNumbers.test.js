@@ -1,4 +1,4 @@
-import { addNumbers } from "./addNumbers.solution.js"
+import { addNumbers } from "./addNumbers.js"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("addNumbers 1", () => {

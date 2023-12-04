@@ -1,4 +1,4 @@
-import { DoubleEndedQueue } from "./DoubleEndedQueue.solution.js"
+import { DoubleEndedQueue } from "./DoubleEndedQueue.js"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("DoubleEndedQueue 1", () => {

@@ -15,7 +15,6 @@ export class Node {
 	 * @param {Node} next - The next Node of the constructor defaults to null.
 	 */
 	constructor() {
-
 	}
 }
 
@@ -28,7 +27,6 @@ export class Node {
  */
 export class DoubleEndedQueue {
 	constructor() {
-		
 	}
 
 	/**
@@ -37,7 +35,6 @@ export class DoubleEndedQueue {
 	 * @return {number} The value at the front of the dequeue, or null if the queue is empty.
 	 */
 	shift() {
-		
 	}
 
 	/**
@@ -46,7 +43,6 @@ export class DoubleEndedQueue {
 	 * @param {number} value - The value to be added to the dequeue.
 	 */
 	unshift(value) {
-		
 	}
 
 	/**
@@ -55,7 +51,6 @@ export class DoubleEndedQueue {
 	 * @param {number} value - The value to be added to the dequeue.
 	 */
 	push(value) {
-		
 	}
 	/**
 	 * Pops the last value from the dequeue.
@@ -63,6 +58,5 @@ export class DoubleEndedQueue {
 	 * @return {any} The value that was popped from the dequeue. Returns null if the dequeue is empty.
 	 */
 	pop() {
-		
 	}
 }

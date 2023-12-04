@@ -1,4 +1,4 @@
-import { Stack } from "./Stack.solution.js"
+import { Stack } from "./Stack.js"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("Stack 1", () => {

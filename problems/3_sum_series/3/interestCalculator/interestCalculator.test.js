@@ -1,4 +1,4 @@
-import { interestCalculator } from "./interestCalculator.solution.js"
+import { interestCalculator } from "./interestCalculator.js"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("interestCalculator 1", () => {

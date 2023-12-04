@@ -1,4 +1,4 @@
-import { Queue } from "./Queue.solution.js"
+import { Queue } from "./Queue.js"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("Queue 1", () => {

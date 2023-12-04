@@ -13,7 +13,6 @@ export class Node {
 	 * @param {Node} next - The next Node of the constructor defaults to null.
 	 */
 	constructor() {
-
 	}
 }
 /**
@@ -25,7 +24,6 @@ export class Node {
  */
 export class Queue {
 	constructor() {
-		
 	}
 
 	/**
@@ -35,7 +33,6 @@ export class Queue {
 	 * @returns {void}
 	 */
 	enqueue(value) {
-		
 	}
 
 	/**
@@ -44,6 +41,5 @@ export class Queue {
 	 * @return {number} The value at the front of the queue, or null if the queue is empty.
 	 */
 	dequeue() {
-		
 	}
 }

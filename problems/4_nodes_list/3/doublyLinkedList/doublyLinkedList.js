@@ -15,7 +15,6 @@ export class Node {
 	 * @param {Node} next - The next Node of the constructor defaults to null.
 	 */
 	constructor() {
-
 	}
 }
 
