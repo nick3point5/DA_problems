@@ -12,6 +12,8 @@ export class Node {
 	 * @param {number} value - The value of the constructor.
 	 * @param {Node} next - The next Node of the constructor defaults to null.
 	 */
-	constructor() {
+	constructor(value, next = null) {
+	this.value = value
+	this.next - next
 	}
 }
