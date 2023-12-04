@@ -17,7 +17,7 @@ export class Node {
 	}
 }
 /**
- * Creates a stack data structure.
+ * Creates a stack data structure without arrays.
  *
  * @class
  * @returns {Stack}
