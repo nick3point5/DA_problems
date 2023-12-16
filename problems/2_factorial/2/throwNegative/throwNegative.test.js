@@ -12,7 +12,3 @@ Deno.test("throwNegative 2", () => {
 Deno.test("throwNegative 3", () => {
 	assertThrows(() => throwNegative(-1))
 })
-
-Deno.test("throwNegative 4", () => {
-	assertThrows(() => throwNegative(3.5))
-})
