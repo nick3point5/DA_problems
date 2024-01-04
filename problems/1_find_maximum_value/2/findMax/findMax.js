@@ -5,5 +5,11 @@
  * @return {number} Returns the maximum value in the array. Returns null if the array is empty.
  */
 export function findMax(array) {
-	return null
+	var highestNumber = 0
+	if (array.length == 0) {
+		return null
+	} else {
+		return Math.max(...array)
+	}
+	
 }

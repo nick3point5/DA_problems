@@ -6,5 +6,11 @@
  * @return {number} The maximum value between a and b.
  */
 export function compareMax(a, b) {
-	return null
+	if (a > b) {
+		return a
+	} else if (b > a) {
+		return b
+	} else if (b == a) {
+		return a
+	}
 }
