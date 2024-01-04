@@ -13,7 +13,7 @@ export class Node {
 	 * @param {Node} next - The next Node of the constructor defaults to null.
 	 */
 	constructor(value, next = null) {
-	this.value = value
-	this.next - next
+		this.value = value
+		this.next = next
 	}
 }

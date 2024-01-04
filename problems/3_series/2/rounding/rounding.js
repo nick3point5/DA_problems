@@ -6,5 +6,18 @@
  * @return {number} The rounded number.
  */
 export function rounding(number, precision = 0) {
-	return null
+	if (precision >= 0) {
+		return Number(number.toFixed(precision))
+	} else {
+		var precise = 10 ** precision
+		var rePrecise = 10 ** Math.abs(precision)
+		number = Math.round(number * precise)
+		number = number * rePrecise
+		return Number(number)
+	}
+	
+	
+	
+	
+
 }
