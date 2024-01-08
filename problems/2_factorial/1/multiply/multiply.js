@@ -11,5 +11,5 @@
  * ```
  */
 export function multiply(x, y) {
-	return null
+	return x * y
 }

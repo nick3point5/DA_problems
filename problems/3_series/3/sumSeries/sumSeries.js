@@ -10,5 +10,22 @@
  * sumSeries(0) = 0
  */
 export function sumSeries(n) {
-	return null
+	const sumSeriesArray = []
+	if (n == 0 ) {
+		return 0
+	} else if (isNaN(n) || n < 0 || (n - Math.floor(n)) !== 0) {
+		throw new Error(`Not a Number`);
+
+	} else {
+		for (let i = 0; i < n; i++) {
+			sumSeriesArray[i] = i+1
+		}
+		
+        var totalNumber = 0
+        for (let j = 0; j < sumSeriesArray.length; j++) {
+            totalNumber = Number(totalNumber)  + Number(sumSeriesArray[j])
+        }
+        return totalNumber
+      
+	}
 }

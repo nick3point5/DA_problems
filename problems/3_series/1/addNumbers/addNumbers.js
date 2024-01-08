@@ -6,5 +6,5 @@
  * @return {number} The sum of the two numbers.
  */
 export function addNumbers(a, b) {
-	return null
+	return a + b
 }
