@@ -1,9 +1,9 @@
 /**
  * Concatenates two arrays into a new single array without mutating the original arrays.
  *
- * @param {Array} array1 - The first array to be concatenated.
- * @param {Array} array2 - The second array to be concatenated.
- * @return {Array} The concatenated array.
+ * @param {number[]} array1 - The first array to be concatenated.
+ * @param {number[]} array2 - The second array to be concatenated.
+ * @return {number[]} The concatenated array.
  * 
  * @example
  * concatArray([1, 2, 3], [4, 5, 6]); // [1, 2, 3, 4, 5, 6]

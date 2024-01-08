@@ -1,7 +1,7 @@
 /**
  * Calculates the sum of all the elements in an array.
  *
- * @param {Array} array - The array of numbers to sum.
+ * @param {number[]} array - The array of numbers to sum.
  * @return {number} The sum of all the elements in the array.
  * @example
  * sumArray([1, 2, 3, 4, 5]); // 15
