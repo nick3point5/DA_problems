@@ -4,7 +4,7 @@
  * @param {number[][]} matrix - a 2D array
  * @param {number} n - the number of times to rotate 90 degrees clockwise
  * @return {number[][]} the rotated 2D array
- * @example 
+ * @example
  * rotate2d([
 		[1, 2, 3],
 		[4, 5, 6],

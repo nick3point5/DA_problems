@@ -17,7 +17,7 @@ export function addNumbers2(a, b) {
 }
 
 export function addNumbers3(a, b) {
-	if(b === 0) {
+	if (b === 0) {
 		return a
 	}
 	return addNumbers3(a++, b--)

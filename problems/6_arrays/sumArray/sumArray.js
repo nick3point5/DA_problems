@@ -8,7 +8,6 @@
  * sumArray([1, 2, 3, 4, 5, 6]); // 21
  * sumArray([-1, 2, -3, 4, -5, 6, -7, 8, -9]); // -5
  */
- */
 export function sumArray() {
 	return null
 }
