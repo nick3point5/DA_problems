@@ -1,4 +1,4 @@
-import { hasDuplicate } from "./hasDuplicate.solution.js"
+import { hasDuplicate } from "./hasDuplicate.js"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("hasDuplicate 1", () => {

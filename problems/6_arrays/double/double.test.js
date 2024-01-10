@@ -1,4 +1,4 @@
-import { double } from "./double.solution.js"
+import { double } from "./double.js"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("double 1", () => {

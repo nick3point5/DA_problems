@@ -1,4 +1,4 @@
-import { fillGaps } from "./fillGaps.solution.js"
+import { fillGaps } from "./fillGaps.js"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("fillGaps 1", () => {
