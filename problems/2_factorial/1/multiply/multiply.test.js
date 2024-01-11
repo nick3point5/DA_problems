@@ -1,5 +1,5 @@
-import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 import { multiply } from "./multiply.js"
+import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("multiply 1", () => {
 	assertEquals(multiply(1, 2), 2)

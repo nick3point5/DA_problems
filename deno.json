@@ -1,6 +1,6 @@
 {
 	"tasks": {
-		"test": "deno test problems",
+		"test": "deno test problems -A --watch",
 		"lint": "deno lint",
 		"format": "deno fmt"
 	},
