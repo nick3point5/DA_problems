@@ -28,7 +28,7 @@ export function hasDuplicate3(array) {
 	for (let i = 0; i < array.length; i++) {
 		const value = array[i]
 
-		if (map[value]) {
+		if (map[value] !== undefined) {
 			return true
 		}
 
