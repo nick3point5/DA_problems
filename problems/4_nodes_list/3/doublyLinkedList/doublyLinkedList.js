@@ -14,7 +14,10 @@ export class Node {
 	 * @param {Node} prev - The previous Node of the constructor defaults to null.
 	 * @param {Node} next - The next Node of the constructor defaults to null.
 	 */
-	constructor() {
+	constructor(value, next = null, prev = null) {
+		this.value = value
+		this.next = next
+		this.prev = prev
 	}
 }
 
