@@ -1,5 +1,6 @@
 emmet-gen-templates/
 emmet-gen-templates.json
 *.solution.js
+*.solution.ts
 _*/
 .vscode/
