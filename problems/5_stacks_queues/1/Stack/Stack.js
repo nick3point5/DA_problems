@@ -12,7 +12,9 @@ export class Node {
 	 * @param {number} value - The value of the constructor.
 	 * @param {Node} next - The next Node of the constructor defaults to null.
 	 */
-	constructor() {
+	constructor(value, next = null) {
+		this.value = value
+		this.next = next
 	}
 }
 /**
@@ -24,6 +26,7 @@ export class Node {
  */
 export class Stack {
 	constructor() {
+		this.head = new Node()
 	}
 	/**
 	 * Pushes a new value onto the top of the stack.
@@ -32,12 +35,14 @@ export class Stack {
 	 * @returns {void}
 	 */
 	push(value) {
+		this.push(value)
 	}
 	/**
 	 * Pops the top element from the stack and returns it.
 	 *
 	 * @return {number} The value of the element popped from the stack, or null if the stack is empty.
 	 */
-	pop() {
+	pop(value) {
+		this.pop(value)
 	}
 }

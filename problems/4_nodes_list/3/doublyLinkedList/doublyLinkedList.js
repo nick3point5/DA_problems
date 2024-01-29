@@ -28,5 +28,18 @@ export class Node {
  * @return {Node} - The head node of the created doubly linked list.
  */
 export function doublyLinkedList(array) {
-	return null
+	let previousNode = null
+	let nodeHead = null
+	for (let i = 0; i < array.length; i++) {
+		const newNode = new Node(array[i])
+		if (nodeHead === null) {
+			nodeHead = newNode
+		}
+		if (previousNode !== null) {
+			previousNode.next = newNode
+			newNode.prev = previousNode
+		}
+		previousNode = newNode
+	}
+	return nodeHead
 }
