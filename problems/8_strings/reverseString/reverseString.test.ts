@@ -1,4 +1,4 @@
-import { reverseString6 as reverseString } from "./reverseString.solution.js"
+import { reverseString6 as reverseString } from "./reverseString..ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("reverseString 1", () => {

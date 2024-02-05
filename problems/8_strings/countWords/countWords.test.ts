@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { countWords } from "./countWords.ts"
+=======
+import { countWords } from "./countWords..ts"
+>>>>>>> 5bfddafb3cca4e70a619e373d80000a575c65a6f
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("countWords", () => {
