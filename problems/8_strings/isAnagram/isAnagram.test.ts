@@ -1,4 +1,4 @@
-import { isAnagram } from "./isAnagram.solution.js"
+import { isAnagram } from "./isAnagram.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("isAnagram 1", () => {
