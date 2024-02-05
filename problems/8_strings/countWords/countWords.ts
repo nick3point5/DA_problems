@@ -7,5 +7,5 @@
  * @return {number} The number of words in the string.
  */
 export function countWords(str: string): number {
-	return null
+	return str.split(" ").length
 }
