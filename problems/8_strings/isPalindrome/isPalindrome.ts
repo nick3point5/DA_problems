@@ -10,5 +10,8 @@
  * isPalindrome("A man, a plan, a canal: Panama") = true
  */
 export function isPalindrome(str: string): boolean {
-	return null
+	//half finished
+	let reversedStr = str.split("").reverse().join("")
+	return reversedStr === str
+
 }
