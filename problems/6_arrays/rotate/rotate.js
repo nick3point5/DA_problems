@@ -10,7 +10,7 @@
  * rotate([1, 2, 3, 4, 5], 5); // [1, 2, 3, 4, 5]
  */
 export function rotate(arr,n) {
-	if (arr === []) {
+	if (arr.length === 0) {
 		return arr
 	} else {
 

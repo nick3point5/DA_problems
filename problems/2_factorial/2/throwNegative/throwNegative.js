@@ -13,9 +13,8 @@
  */
 export function throwNegative(n) {
 	if (n < 0) {
-		throw new console.error();
+		throw new Error(`negative`);
 	} else {
 		return n
 	}
-	
 }
