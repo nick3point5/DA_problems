@@ -1,3 +1,5 @@
+import { Node } from "../../4_nodes_list/2/linkedList/linkedList.js"
+
 /**
  * Deletes an n-th element from the given head.
  *

@@ -1,8 +1,10 @@
+import { Node } from "../../4_nodes_list/2/linkedList/linkedList.js"
+
 /**
  * Finds the middle node of a linked list.
  *
  * @param {Node} head - The head of the linked list.
- * @return {Node} The middle node of the linked list or null if the list is empty. (If the list has an even number of nodes, return the right most node that is in the middle of the list.)
+ * @return {Node} The middle node of the linked list or null if the list is empty. (If the list has an even number of nodes, return the right most, tail end, node that is in the middle of the list.)
  * @example
  * findMiddle([1, 2, 3, 4, 5]) => 3
  * findMiddle([]) => null

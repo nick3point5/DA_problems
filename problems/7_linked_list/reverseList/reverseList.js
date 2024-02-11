@@ -1,3 +1,5 @@
+import { Node } from "../../4_nodes_list/2/linkedList/linkedList.js"
+
 /**
  * Reverses the order of a linked list.
  *
