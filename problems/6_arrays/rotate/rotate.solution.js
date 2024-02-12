@@ -31,7 +31,7 @@ export function rotate3(array, n) {
 }
 
 export function rotate4(array, n) {
-	const pivot = n%array.length
+	const pivot = n % array.length
 	array.unshift(...array.splice(-pivot))
 	return array
 }

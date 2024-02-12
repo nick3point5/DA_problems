@@ -5,11 +5,9 @@
 		"format": "deno fmt"
 	},
 	"fmt": {
-		"options": {
-			"semiColons": false,
-			"indentWidth": 2,
-			"useTabs": true,
-			"lineWidth": 140
-		}
+		"semiColons": false,
+		"indentWidth": 2,
+		"useTabs": true,
+		"lineWidth": 140
 	}
 }

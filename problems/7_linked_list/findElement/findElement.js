@@ -1,3 +1,5 @@
+import { Node } from "../../4_nodes_list/2/linkedList/linkedList.js"
+
 /**
  * Finds the index of the first occurrence of an element in an list.
  *

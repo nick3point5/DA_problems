@@ -1,3 +1,5 @@
+import { Node } from "../../4_nodes_list/2/linkedList/linkedList.js"
+
 /**
  * Calculates the length of a linked list.
  *
