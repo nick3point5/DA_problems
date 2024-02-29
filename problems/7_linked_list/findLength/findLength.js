@@ -8,6 +8,19 @@ import { Node } from "../../4_nodes_list/2/linkedList/linkedList.js"
  * @example
  * findLength([1, 2, 3, 4, 5]) => 5
  */
-export function findLength() {
-	return null
+export function findLength(head) {
+	let length = 0
+
+	if (head === null) {
+		return length
+	}
+
+	length++
+
+	while (head.next !== null) {
+		head = head.next
+		length++
+	}
+	
+	return length
 }

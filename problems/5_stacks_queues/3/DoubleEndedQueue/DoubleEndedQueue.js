@@ -95,8 +95,6 @@ export class DoubleEndedQueue {
       		this.tail.next = newNode
       		this.tail = newNode
     	}
-
-    	this.size++
 	}
 	/**
 	 * Pops the last value from the dequeue.

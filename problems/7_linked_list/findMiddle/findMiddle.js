@@ -10,6 +10,39 @@ import { Node } from "../../4_nodes_list/2/linkedList/linkedList.js"
  * findMiddle([]) => null
  * findMiddle([1, 2, 3, 4, 5, 6]) => 4
  */
-export function findMiddle() {
-	return null
+export function findMiddle(head) {
+	let lengthList = head
+
+	if (lengthList === null) {
+		return null
+	}
+
+	let length = 1
+
+	while (lengthList.next !== null) {
+		lengthList = lengthList.next
+		length++
+	}
+
+
+
+	if (length%2 === 0) {
+		let repeat = length/2
+
+		while (repeat > 0) {
+			head = head.next
+			repeat--
+		}
+		
+		return head
+	} else {
+		let repeat = Math.floor(length/2)
+
+		while (repeat > 0) {
+			head = head.next
+			repeat--
+		}
+
+		return head
+	}
 }
