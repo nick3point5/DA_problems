@@ -25,3 +25,11 @@ export function double3(array) {
 
 	return result
 }
+
+export function double4(array) {
+	const n = array.length
+	for (let i = 0; i < n; i++) {
+		array[i] *= 2
+	}
+	return array
+}

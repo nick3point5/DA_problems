@@ -3,16 +3,16 @@
  *
  * @class
  * @property {number} value - The value of the Node.
- * @property {Node} prev - The previous Node of the Node.
- * @property {Node} next - The next Node of the Node.
+ * @property {Node | null} prev - The previous Node of the Node.
+ * @property {Node | null} next - The next Node of the Node.
  */
 export class Node {
 	/**
 	 * Initializes a new instance of the constructor.
 	 *
 	 * @param {number} value - The value of the constructor.
-	 * @param {Node} prev - The previous Node of the constructor defaults to null.
-	 * @param {Node} next - The next Node of the constructor defaults to null.
+	 * @param {Node | null} prev - The previous Node of the constructor defaults to null.
+	 * @param {Node | null} next - The next Node of the constructor defaults to null.
 	 */
 	constructor(value, next = null, prev = null) {
 		this.value = value
