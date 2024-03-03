@@ -1,9 +1,9 @@
 /**
  * Concatenates two arrays into a new single array without mutating the original arrays.
  *
- * @param {Array} array1 - The first array to be concatenated.
- * @param {Array} array2 - The second array to be concatenated.
- * @return {Array} The concatenated array.
+ * @param {number[]} array1 - The first array to be concatenated.
+ * @param {number[]} array2 - The second array to be concatenated.
+ * @return {number[]} The concatenated array.
  */
 export function concatArray(array1, array2) {
 	return array1.concat(array2)

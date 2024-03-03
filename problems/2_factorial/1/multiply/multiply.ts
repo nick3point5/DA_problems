@@ -10,21 +10,6 @@
  * multiply(3, 4) = 12
  * ```
  */
-export function multiply(x, y) {
-	return x * y
-}
-
-export function multiply2(x, y) {
-	let result = 0
-	while (y--) {
-		result += x
-	}
-	return result
-}
-
-export function multiply3(x, y) {
-	if (y === 0) {
-		return 0
-	}
-	return x + multiply3(x, y - 1)
+export function multiply() {
+	return null
 }

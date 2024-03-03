@@ -1,7 +1,7 @@
 /**
  * Checks if an array has any duplicate values.
  *
- * @param {Array} array - The array to be checked for duplicates.
+ * @param {number[]} array - The array to be checked for duplicates.
  * @return {boolean} Returns true if the array has duplicate values, false otherwise.
  */
 export function hasDuplicate(array) {
