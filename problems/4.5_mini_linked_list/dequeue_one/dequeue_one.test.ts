@@ -1,5 +1,5 @@
 import { linkedList } from "../../4_nodes_list/2/linkedList/linkedList.js"
-import { dequeue_one } from "./dequeue_one.solution.ts"
+import { dequeue_one } from "./dequeue_one.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("dequeue_one 1", () => {

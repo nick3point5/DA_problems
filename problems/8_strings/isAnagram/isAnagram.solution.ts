@@ -50,6 +50,7 @@ export function isAnagram2(str1: string, str2: string): boolean {
 
 export function isAnagram3(str1: string, str2: string) {
 	let map = new Array(256).fill(0)
+	
 	for (let i = 0; i < str1.length; i++) {
 		map[str1.charCodeAt(i)]++
 	}
