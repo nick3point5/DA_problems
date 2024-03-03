@@ -5,5 +5,5 @@
  * @return {string} The reversed string.
  */
 export function reverseString(str: string): string {
-	return null
+	return (str === "") ? "" : str.split("").reverse().join("")
 }

@@ -10,5 +10,5 @@
  * toCamelCase("This is a string with spaces") = "thisIsAStringWithSpaces"
  */
 export function toCamelCase(str: string): string {
-	return null
+	return str.toLowerCase()
 }

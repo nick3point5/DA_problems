@@ -31,6 +31,6 @@ export type NestedArray = [number, [OptionalType<NestedArray>, OptionalType<Nest
  *    \ / \
  *    5 6  7
  */
-export function makeTree(array) {
+export function makeTree() {
 	return null
 }
