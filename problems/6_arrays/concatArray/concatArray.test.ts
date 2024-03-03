@@ -1,4 +1,4 @@
-import { concatArray } from "./concatArray.js"
+import { concatArray } from "./concatArray.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("concatArray 1", () => {

@@ -1,4 +1,4 @@
-import { compareMax } from "./compareMax.js"
+import { compareMax } from "./compareMax.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("compareMax 1", () => {

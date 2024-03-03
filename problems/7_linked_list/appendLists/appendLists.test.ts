@@ -1,6 +1,6 @@
-import { appendLists } from "./appendLists.js"
+import { appendLists } from "./appendLists.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
-import { linkedList } from "../../4_nodes_list/2/linkedList/linkedList.js"
+import { linkedList } from "../../4_nodes_list/2/linkedList/linkedList.ts"
 
 Deno.test("appendLists 1", () => {
 	const list1 = linkedList([1, 2, 3])

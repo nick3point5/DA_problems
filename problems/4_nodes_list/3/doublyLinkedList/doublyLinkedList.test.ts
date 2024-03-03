@@ -1,5 +1,5 @@
 import { doublyLinkedList, Node } from "./doublyLinkedList.ts"
-import { assertEquals, equal } from "https://deno.land/std@0.208.0/assert/mod.ts"
+import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("doublyLinkedList 1", () => {
 	assertEquals(doublyLinkedList([]), null)

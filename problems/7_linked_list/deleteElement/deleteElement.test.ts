@@ -1,7 +1,7 @@
-import { deleteElement } from "./deleteElement.js"
+import { deleteElement } from "./deleteElement.ts"
 import { assertEquals, assertThrows } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
-import { linkedList } from "../../4_nodes_list/2/linkedList/linkedList.js"
+import { linkedList } from "../../4_nodes_list/2/linkedList/linkedList.ts"
 
 Deno.test("deleteElement 1", () => {
 	const list = linkedList([1, 2, 3])

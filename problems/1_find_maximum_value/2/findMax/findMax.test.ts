@@ -1,4 +1,4 @@
-import { findMax } from "./findMax.js"
+import { findMax } from "./findMax.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("findMax 1", () => {

@@ -1,4 +1,4 @@
-import { uniformInvestmentCalculator } from "./uniformInvestmentCalculator.js"
+import { uniformInvestmentCalculator } from "./uniformInvestmentCalculator.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("uniformInvestmentCalculator 1", () => {

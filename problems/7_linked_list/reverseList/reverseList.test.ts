@@ -1,6 +1,6 @@
-import { reverseList as reverseList } from "./reverseList.js"
+import { reverseList as reverseList } from "./reverseList.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
-import { linkedList } from "../../4_nodes_list/2/linkedList/linkedList.js"
+import { linkedList } from "../../4_nodes_list/2/linkedList/linkedList.ts"
 
 Deno.test("reverseList 1", () => {
 	const list = linkedList([1, 2, 3, 4, 5])
