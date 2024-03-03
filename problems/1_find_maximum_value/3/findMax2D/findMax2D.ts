@@ -5,5 +5,5 @@
  * @return {number} - Returns the maximum value in the array. Returns null if the array is empty..
  */
 export function findMax2D() {
-  return null
+	return null
 }
