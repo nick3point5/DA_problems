@@ -1,4 +1,4 @@
-import { TreeNode } from "../../1/TreeNode/TreeNode.solution.ts"
+import { TreeNode } from "../../1/TreeNode/TreeNode.ts"
 
 /**
  * Check if the given binary tree is balanced or not.

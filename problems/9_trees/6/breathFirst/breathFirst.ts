@@ -1,4 +1,4 @@
-import { TreeNode } from "../../1/TreeNode/TreeNode.solution.ts";
+import { TreeNode } from "../../1/TreeNode/TreeNode.ts";
 
 /**
  * Perform a breath first (left to right) traversal on the given binary tree node.

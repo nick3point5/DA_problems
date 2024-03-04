@@ -1,4 +1,4 @@
-import { TreeNode } from "../../1/TreeNode/TreeNode.solution.ts";
+import { TreeNode } from "../../1/TreeNode/TreeNode.ts";
 
 /**
  * Performs a depth-first (left-to-right) search on the given binary tree node.

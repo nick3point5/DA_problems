@@ -1,4 +1,4 @@
-import { TreeNode } from "../../1/TreeNode/TreeNode.solution.ts"
+import { TreeNode } from "../../1/TreeNode/TreeNode.ts"
 
 /**
  * Check if two binary trees are the same.

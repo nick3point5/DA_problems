@@ -1,5 +1,5 @@
 import { OptionalType } from "../../../../test_utils/OptionalType.ts"
-import { TreeNode } from "../../1/TreeNode/TreeNode.solution.ts"
+import { TreeNode } from "../../1/TreeNode/TreeNode.ts"
 
 
 export type NestedArray = [number, [OptionalType<NestedArray>, OptionalType<NestedArray>]]
