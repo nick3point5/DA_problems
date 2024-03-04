@@ -1,4 +1,4 @@
-import { TreeNode } from "../../1/TreeNode/TreeNode.solution.ts"
+import { TreeNode } from "../../1/TreeNode/TreeNode.ts"
 
 /**
  * Reverses the binary tree rooted at the given node. Left and right nodes are swapped. If the tree is empty, it returns null.
