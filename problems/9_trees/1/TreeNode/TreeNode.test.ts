@@ -64,3 +64,43 @@ Deno.test("TreeNode 4", () => {
 
 	assertEquals(assert, expected)
 })
+
+Deno.test("TreeNode 5", () => {
+	const assert = testFn(0, testFn(1), testFn(2))
+	const expected = {
+		value: 0,
+		left: {
+			value: 1,
+			left: null,
+			right: null,
+		},
+		right: {
+			value: 2,
+			left: null,
+			right: null,
+		},
+	}
+
+	assertEquals(assert, expected)
+})
+
+Deno.test("TreeNode 6", () => {
+	const assert = testFn("hello", testFn("world"), testFn(""))
+	const expected = {
+		value: "hello",
+		left: {
+			value: "world",
+			left: null,
+			right: null,
+		},
+		right: {
+			value: "",
+			left: null,
+			right: null,
+		},
+	}
+
+	assertEquals(assert, expected)
+})
+
+
