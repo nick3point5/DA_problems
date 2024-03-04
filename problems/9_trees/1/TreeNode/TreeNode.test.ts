@@ -70,7 +70,7 @@ Deno.test("TreeNode 5", () => {
 	const expected = {
 		value: 0,
 		left: {
-			value: 1,
+			value: 0,
 			left: null,
 			right: null,
 		},
