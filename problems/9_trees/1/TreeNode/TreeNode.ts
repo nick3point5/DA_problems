@@ -12,7 +12,7 @@ export class TreeNode<T> {
 	constructor(value: T, left: TreeNode<T> | null, right: TreeNode<T> | null) {
 		this.value = value
 
-		left ? this.left = left : this.left =  null
-		right ? this.right = right : this.right =  null
+		left !== null && left !== undefined  ? this.left = left : this.left =  null
+		right !== null && right !== undefined  ? this.right = right : this.right =  null
 	}
 }
