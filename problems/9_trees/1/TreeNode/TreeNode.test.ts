@@ -66,7 +66,7 @@ Deno.test("TreeNode 4", () => {
 })
 
 Deno.test("TreeNode 5", () => {
-	const assert = testFn(0, testFn(1), testFn(2))
+	const assert = testFn(0, testFn(0), testFn(2))
 	const expected = {
 		value: 0,
 		left: {
