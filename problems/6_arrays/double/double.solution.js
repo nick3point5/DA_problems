@@ -1,8 +1,8 @@
 /**
  * Doubles each element in the given array.
  *
- * @param {Array} array - The array to be doubled.
- * @return {Array} The array with each element doubled.
+ * @param {number[]} array - The array to be doubled.
+ * @return {number[]} The array with each element doubled.
  */
 export function double(array) {
 	return array.map((x) => x * 2)

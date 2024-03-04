@@ -27,6 +27,4 @@ export function multiply3(x, y) {
 		return 0
 	}
 	return x + multiply3(x, y - 1)
-
-	return multiply3(x, y)
 }

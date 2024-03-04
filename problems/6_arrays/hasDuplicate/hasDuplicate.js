@@ -8,13 +8,5 @@
  * hasDuplicate([1, 2, 3, 4, 5, 2]); // true
  */
 export function hasDuplicate(array) {
-	let testArray = []
-	for (let i = 0; i < array.length; i++) { 
-		if (testArray.indexOf(array[i]) !== -1) {
-			return true
-		}
-		testArray.push(array[i])
-	}
-
-	return false
+	return null
 }

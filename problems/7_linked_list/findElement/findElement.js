@@ -10,17 +10,6 @@ import { Node } from "../../4_nodes_list/2/linkedList/linkedList.js"
  * findElement([1, 2, 3, 4, 5], 3) => 2
  * findElement([1, 2, 3, 4, 5], 6) => -1
  */
-export function findElement(head, element) {
-	let index = 0
-
-	while (head !== null) {
-		if (head.value === element) {
-			return index
-		}
-
-		head = head.next
-		index++
-	}
-
-	return -1
+export function findElement() {
+	return null
 }

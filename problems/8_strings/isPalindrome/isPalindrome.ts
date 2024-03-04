@@ -10,10 +10,5 @@
  * isPalindrome("A man, a plan, a canal: Panama") = true
  */
 export function isPalindrome(str: string): boolean {
-	const regex = /[^a-z0-9]/g
-
-	let normalStr = str.toLowerCase().replace(regex,"")
-	let reversedStr = normalStr.split("").reverse().join("")
-
-	return reversedStr === normalStr
+	return null
 }
