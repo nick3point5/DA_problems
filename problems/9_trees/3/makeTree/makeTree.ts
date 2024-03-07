@@ -31,6 +31,14 @@ export type NestedArray = [number, [OptionalType<NestedArray>, OptionalType<Nest
  *    \ / \
  *    5 6  7
  */
-export function makeTree() {
-	return null
+export function makeTree(array: NestedArray) {
+	if (!array) {
+		return null
+	}
+	
+	for (let i = 0; i < array.length; i++) {
+		
+	}
 }
+
+makeTree([1, [[2, [null, null]], [3, [null, null]]]])

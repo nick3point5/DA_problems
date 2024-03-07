@@ -9,10 +9,9 @@ export class TreeNode<T> {
 	 * @param {TreeNode<T> | null} left - the left child node (optional)
 	 * @param {TreeNode<T> | null} right - the right child node (optional)
 	 */
-	constructor(value: T, left: TreeNode<T> | null, right: TreeNode<T> | null) {
+	constructor(value: T, left: TreeNode<T> | null = null, right: TreeNode<T> | null = null) {
 		this.value = value
-
-		left !== null && left !== undefined  ? this.left = left : this.left =  null
-		right !== null && right !== undefined  ? this.right = right : this.right =  null
+		this.left = left
+		this.right = right
 	}
 }
