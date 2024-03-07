@@ -1,4 +1,4 @@
-import { reverseList as reverseList } from "./reverseList.js"
+import { reverseList } from "./reverseList.js"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 import { linkedList } from "../../4_nodes_list/2/linkedList/linkedList.js"
 

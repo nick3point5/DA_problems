@@ -1,8 +1,8 @@
 /**
  * Fills the gaps in an array by inserting missing elements between consecutive elements.
  *
- * @param {Array} array - The array to fill the gaps in.
- * @return {Array} - The modified array with the gaps filled.
+ * @param {number[]} array - The array to fill the gaps in.
+ * @return {number[]} - The modified array with the gaps filled.
  */
 export function fillGaps(array) {
 	if (array.length === 0) {

@@ -15,6 +15,5 @@
  * ```
  */
 export function interestCalculator(principal, rate, time_periods) {
-	var totalMoney = (Math.round((principal * ((rate+1)**time_periods))*100))/100
-	return totalMoney
+	return null
 }

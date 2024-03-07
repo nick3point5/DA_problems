@@ -16,26 +16,5 @@
  * ```
  */
 export function factorial(n) {
-	const factorialArray = []
-	if (n == 0 ) {
-		return 1
-	} else if (isNaN(n) || n < 0 || (n - Math.floor(n)) !== 0) {
-		throw new Error(`Not a Number`);
-
-	} else {
-		for (let i = 0; i < n; i++) {
-			factorialArray[i] = i+1
-		}
-		
-        var totalNumber = 1
-        for (let j = 0; j < factorialArray.length; j++) {
-            totalNumber = Number(totalNumber)  * Number(factorialArray[j])
-            
-        }
-        return totalNumber
-      
-	}
-
-	
+	return null
 }
-

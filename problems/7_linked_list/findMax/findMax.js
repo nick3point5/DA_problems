@@ -10,19 +10,6 @@ import { Node } from "../../4_nodes_list/2/linkedList/linkedList.js"
  * findMax([]) => null
  * findMax([5, 8, 9, 3, 2, 6, 7, 1, 4]) => 9
  */
-export function findMax(head) {
-	if (head === null) {
-		return null
-	}
-
-	let max = 0
-	
-	while (head !== null) {
-		if (head.value > max) {
-			max = head.value
-		}
-		head = head.next
-	}
-
-	return max
+export function findMax() {
+	return null
 }

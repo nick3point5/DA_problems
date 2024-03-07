@@ -6,5 +6,5 @@
  * @return {number} The maximum value between a and b.
  */
 export function compareMax(a, b) {
-	return a > b ? a:b
+	return null
 }

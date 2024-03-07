@@ -12,9 +12,7 @@ export class Node {
 	 * @param {number} value - The value of the constructor.
 	 * @param {Node} next - The next Node of the constructor defaults to null.
 	 */
-	constructor(value,next = null) {
-		this.value = value
-		this.next = next
+	constructor() {
 	}
 }
 /**
@@ -26,29 +24,15 @@ export class Node {
  */
 export class Queue {
 	constructor() {
-		this.size = 0
-		this.head = null
-		this.tail = null
 	}
 
 	/**
 	 * Enqueues a value to the end of the queue.
 	 *
-	 * @param {number} value - The value to be enqueued
+	 * @param {type} value - The value to be enqueued
 	 * @returns {void}
 	 */
 	enqueue(value) {
-		const newNode = new Node(value)
-
-    	if (this.head === null) {
-      		this.head = newNode
-      		this.tail = newNode
-    	} else {
-      		this.tail.next = newNode
-      		this.tail = newNode
-    	}
-
-    	this.size++
 	}
 
 	/**
@@ -57,20 +41,5 @@ export class Queue {
 	 * @return {number} The value at the front of the queue, or null if the queue is empty.
 	 */
 	dequeue() {
-		if (this.size === 0) {
-			return null
-		}
-
-		const removedNode = this.head
-		
-		if (this.head === this.tail) {
-			this.head = null
-			this.tail = null
-		} else {
-			this.head = this.head.next
-		}
-
-		this.size--
-		return removedNode.value
 	}
 }

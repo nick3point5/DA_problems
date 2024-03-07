@@ -25,21 +25,5 @@ export class Node {
  * @return {Node} - The head of the linked list.
  */
 export function linkedList(array) {
-	let head = new Node(null)
-	let currentNode = head
-
-	if (array.length === 0) {
-		return null
-	}
-
-
-	for (let i = 0; i < array.length; i++) {
-		const newNode = new Node(array[i])
-		currentNode.next = newNode
-		currentNode = newNode
-	}
-
-	return head.next
+	return null
 }
-
-linkedList([1, 2, 3])

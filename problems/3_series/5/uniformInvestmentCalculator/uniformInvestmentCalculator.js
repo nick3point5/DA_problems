@@ -8,7 +8,5 @@
  * @return {number} The calculated amount after interest rounded to the nearest penny
  */
 export function uniformInvestmentCalculator(principal, deposit, rate, time_periods) {
-	let totalMoney = (Math.round((principal + (time_periods * deposit) * ((rate+1)**time_periods))*100))/100
-	
-	return totalMoney
+	return null
 }

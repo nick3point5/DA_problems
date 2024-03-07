@@ -10,7 +10,7 @@ export class Node {
 	 * Initializes a new instance of the constructor.
 	 *
 	 * @param {number} value - The value of the constructor.
-	 * @param {Node} next - The next Node of the constructor defaults to null.
+	 * @param {Node | null} next - The next Node of the constructor defaults to null.
 	 */
 	constructor(value, next = null) {
 		this.value = value
