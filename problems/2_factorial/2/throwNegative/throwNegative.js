@@ -12,5 +12,9 @@
  * ```
  */
 export function throwNegative(n) {
-	return null
+	if (n < 0) {
+		throw new Error(`negative`);
+	} else {
+		return n
+	}
 }

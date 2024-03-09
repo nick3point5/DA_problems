@@ -10,6 +10,7 @@
  * concatArray([1, 2, 3, 4, 5], [6]); // [1, 2, 3, 4, 5, 6]
  * concatArray([1, 2, 3, 4, 5], []); // [1, 2, 3, 4, 5]
  */
-export function concatArray() {
-	return null
+export function concatArray(arr1, arr2) {
+	const array3 = arr1.concat(arr2)
+	return array3
 }
