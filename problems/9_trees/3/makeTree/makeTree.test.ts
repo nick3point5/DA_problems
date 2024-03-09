@@ -66,24 +66,24 @@ Deno.test("makeTree 3", () => {
 })
 
 Deno.test("makeTree 4", () => {
-	const array: NestedArray = [1, [[2, [[3, [null, null]], [4, [null, null]]]], [5, [[6, [null, null]], [7, [null, null]]]]]]
+	const array: NestedArray = [1, [[2, [[4, [null, null]], [5, [null, null]]]], [3, [[6, [null, null]], [7, [null, null]]]]]]
 	const result = {
 		value: 1,
 		left: {
 			value: 2,
 			left: {
-				value: 3,
+				value: 4,
 				left: null,
 				right: null
 			},
 			right: {
-				value: 4,
+				value: 5,
 				left: null,
 				right: null
 			}
 		},
 		right: {
-			value: 5,
+			value: 3,
 			left: {
 				value: 6,
 				left: null,
@@ -99,21 +99,21 @@ Deno.test("makeTree 4", () => {
 	assertEquals(testFn(array), result)
 })
 
-Deno.test("makeTree 5", () => {
-	const array: NestedArray = [1, [[2, [[3, [null, null]], null]], [5, [[6, [null, null]], [7, [null, null]]]]]]
+Deno.test("makeTree 4", () => {
+	const array: NestedArray = [1, [[2, [null, [5, [null, null]]]], [3, [[6, [null, null]], [7, [null, null]]]]]]
 	const result = {
 		value: 1,
 		left: {
 			value: 2,
-			left: {
-				value: 3,
+			left: null,
+			right: {
+				value: 5,
 				left: null,
 				right: null
-			},
-			right: null
+			}
 		},
 		right: {
-			value: 5,
+			value: 3,
 			left: {
 				value: 6,
 				left: null,

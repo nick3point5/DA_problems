@@ -17,14 +17,14 @@ export type NestedArray = [number, [OptionalType<NestedArray>, OptionalType<Nest
  *    / \
  *   2   3
  * 
- * makeTree([1, [[2, [[3, [null, null]], [4, [null, null]]]], [5, [[6, [null, null]], [7, [null, null]]]]]])=>
+ * makeTree([1, [[2, [[4, [null, null]], [5, [null, null]]]], [3, [[6, [null, null]], [7, [null, null]]]]]])=>
  *     1
  *    / \
  *   2   3
  *  / \ / \
  * 4  5 6  7
  * 
- * makeTree([1, [[2, [[3, [null, null]], [null, [5, [[6, [null, null]], [7, [null, null]]]]]])=>
+ * makeTree([1, [[2, [null, [5, [null, null]]]], [3, [[6, [null, null]], [7, [null, null]]]]]])=>
  *     1
  *    / \
  *   2   3
