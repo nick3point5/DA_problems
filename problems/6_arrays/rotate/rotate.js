@@ -9,6 +9,16 @@
  * rotate([1, 2, 3, 4, 5], 3); // [3, 4, 5, 1, 2]
  * rotate([1, 2, 3, 4, 5], 5); // [1, 2, 3, 4, 5]
  */
-export function rotate() {
-	return null
+export function rotate(arr,n) {
+	if (arr.length === 0) {
+		return arr
+	} else {
+
+		for (let i = 0; i < n; i++) {
+			const popped = arr.pop()
+
+			arr.unshift(popped)
+		}
+		return arr
+	}
 }
