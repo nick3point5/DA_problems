@@ -11,7 +11,7 @@ import { TreeNode } from "../../1/TreeNode/TreeNode.ts"
  *      / \
  *     2   3
  * 
- * isBalance([1, [2, [4, 5], 3, [6, 7]]]) => true
+ * isBalance([1, [[2, [4, 5]], [3, [6, 7]]]]) => true
  *       1
  *      / \
  *     2   3
