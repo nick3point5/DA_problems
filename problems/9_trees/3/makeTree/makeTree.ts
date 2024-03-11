@@ -33,13 +33,14 @@ export type NestedArray = [number, [OptionalType<NestedArray>, OptionalType<Nest
  */
 export function makeTree(array: NestedArray) {
 	if (!array) {
-		return null
+		return null;
 	}
 	
-	//split array into base and then the branches for example [1, [null, null]] will be turned into [1] [null,null]
-	const [base, branches] = array
+	//split array into base and then the branches for example [1, [null, null]] will be turned into base = [1] branches = [null,null]
+	const base = array[0];
+	const branches = array[1];
 	//make node of the base
-	const node = new TreeNode(base)
+	const node = new TreeNode(base);
 
 	//check if there is a left or right node if there is then call the makeTree function again 
 	if (branches[0]) {
@@ -53,5 +54,5 @@ export function makeTree(array: NestedArray) {
 
 	//returns the base node after all the recursion is done
 	//if it is a recursion function then it will return the node that it created but the final return will be from function called first
-	return node
+	return node;
 }
