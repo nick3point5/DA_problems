@@ -25,6 +25,21 @@ import { TreeNode } from "../../1/TreeNode/TreeNode.ts"
  *    /   / \
  *   5    2  1
  */
-export function sumTree() {
-	return null
+export function sumTree(node: TreeNode<number> | null) {
+	//same as depth first but with sum values
+	if (node === null) return 0
+
+	let sumValue: number = 0
+
+    function move(node: TreeNode<number> | null) {
+        if (node === null) return 0
+		sumValue += node.value
+
+        move(node.left)
+        move(node.right)
+    }
+
+    move(node)
+
+    return sumValue
 }
