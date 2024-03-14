@@ -10,15 +10,14 @@ type OptNumber = OptionalType<number>
  * @return {TreeNode<number>} the updated node after adding the values
  */
 export function addTreeNodes(node: TreeNode<number>, values: [OptNumber, OptNumber]) {
-	const left = values[0] !== null ? new TreeNode(values[0]) : null;
-    const right = values[1] !== null ? new TreeNode(values[1]) : null;
+    const [left, right] = values
 
 	if (left !== null) {
-        node.left = left;
+        node.left = new TreeNode(left)
     }
 
     if (right !== null) {
-        node.right = right;
+        node.right = new TreeNode(right)
     }
     
     return node;

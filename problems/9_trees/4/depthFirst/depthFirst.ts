@@ -24,6 +24,28 @@ import { TreeNode } from "../../1/TreeNode/TreeNode.ts";
  *    / \ / \
  *   4  5 6  7
  */
-export function depthFirst() {
-	return null
+export function depthFirst(node: TreeNode<number> | null) {
+	//check if there is a tree
+	if (node === null) return []
+
+	//create array
+	const returnArr: number[] = []
+
+	//travel through the nodes
+    function move(node: TreeNode<number> | null) {
+        if (node === null) return
+		//push all the nodes to the array
+        returnArr.push(node.value)
+
+		//travel if there is left
+        move(node.left)
+		//travel if there is right
+        move(node.right)
+    }
+
+	//call the function first starting from the root node
+    move(node)
+
+	//return the array after we finish recursing functions
+    return returnArr
 }
