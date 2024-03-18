@@ -1,5 +1,5 @@
 import { OptionalType } from "../../../../test_utils/OptionalType.ts"
-import { TreeNode } from "../../1/TreeNode/TreeNode.ts"
+import { TreeNode } from "../../1/TreeNode/TreeNode.solution.ts"
 
 type OptNumber = OptionalType<number>
 /**
@@ -10,15 +10,13 @@ type OptNumber = OptionalType<number>
  * @return {TreeNode<number>} the updated node after adding the values
  */
 export function addTreeNodes(node: TreeNode<number>, values: [OptNumber, OptNumber]) {
-    const [left, right] = values
-
+	const [left, right] = values
 	if (left !== null) {
-        node.left = new TreeNode(left)
-    }
+		node.left = new TreeNode(left)
+	}
+	if (right !== null) {
+		node.right = new TreeNode(right)
+	}
 
-    if (right !== null) {
-        node.right = new TreeNode(right)
-    }
-    
-    return node;
+	return node
 }

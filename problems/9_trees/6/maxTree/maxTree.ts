@@ -25,6 +25,24 @@ import { TreeNode } from "../../1/TreeNode/TreeNode.ts"
  *    / \ / \
  *   5  4 2  1
  */
-export function maxTree() {
-	return null
+export function maxTree(node: TreeNode<number> | null) {
+	//same as depth first but with max value
+	if (node === null) return null
+
+	let maxValue: number = node.value
+
+    function move(node: TreeNode<number> | null) {
+        if (node === null) return null
+
+        if (node.value > maxValue) {
+			maxValue = node.value
+		}
+
+        move(node.left)
+        move(node.right)
+    }
+
+    move(node)
+
+    return maxValue
 }

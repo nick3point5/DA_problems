@@ -1,11 +1,11 @@
 /**
- * Reverses a given string.
+ * Reverses words of a given string.
  *
  * @param {string} str - The string to be reversed.
  * @return {string} The reversed string.
  * @example
- * reverseString("hello") = "olleh"
- * reverseString("hello world") = "dlrow olleh"
+ * reverseWords("hello") = "hello"
+ * reverseWords("hello world") = "world hello"
  */
 export function reverseString(str: string): string {
 	return null
