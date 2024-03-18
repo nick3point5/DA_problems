@@ -7,6 +7,6 @@
  * reverseString("hello") = "olleh"
  * reverseString("hello world") = "dlrow olleh"
  */
-export function reverseString(str: string): string {
-	return null
+export function reverseWords(str: string): string {
+	return str.split("").reverse().join("")
 }
