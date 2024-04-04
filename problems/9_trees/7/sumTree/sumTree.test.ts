@@ -1,4 +1,4 @@
-import { NestedArray, makeTree } from "../../3/makeTree/makeTree.ts"
+import { makeTree, NestedArray } from "../../3/makeTree/makeTree.ts"
 import { sumTree } from "./sumTree.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 

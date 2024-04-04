@@ -1,7 +1,6 @@
 import { OptionalType } from "../../../../test_utils/OptionalType.ts"
 import { TreeNode } from "../../1/TreeNode/TreeNode.ts"
 
-
 export type NestedArray = [number, [OptionalType<NestedArray>, OptionalType<NestedArray>]]
 /**
  * Creates a binary tree from the given array.
@@ -11,19 +10,19 @@ export type NestedArray = [number, [OptionalType<NestedArray>, OptionalType<Nest
  * @example
  * makeTree([1, [null, null]])=>
  *     1
- * 
+ *
  * makeTree([1, [[2, [null, null]], [3, [null, null]]]])=>
  *     1
  *    / \
  *   2   3
- * 
+ *
  * makeTree([1, [[2, [[4, [null, null]], [5, [null, null]]]], [3, [[6, [null, null]], [7, [null, null]]]]]])=>
  *     1
  *    / \
  *   2   3
  *  / \ / \
  * 4  5 6  7
- * 
+ *
  * makeTree([1, [[2, [null, [5, [null, null]]]], [3, [[6, [null, null]], [7, [null, null]]]]]])=>
  *     1
  *    / \
@@ -31,6 +30,7 @@ export type NestedArray = [number, [OptionalType<NestedArray>, OptionalType<Nest
  *    \ / \
  *    5 6  7
  */
+<<<<<<< HEAD
 export function makeTree(array: NestedArray) {
 	if (!array) {
 		return null;
@@ -56,3 +56,8 @@ export function makeTree(array: NestedArray) {
 	//if it is a recursion function then it will return the node that it created but the final return will be from function called first
 	return node;
 }
+=======
+export function makeTree() {
+	return null
+}
+>>>>>>> 923da52243c88c89edb96b258594b238ad044005

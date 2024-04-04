@@ -2,7 +2,6 @@ import { jsonifyClass } from "../../../../test_utils/jsonifyClass.ts"
 import { TreeNode } from "./TreeNode.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
-
 const testFn = jsonifyClass(TreeNode)
 
 Deno.test("TreeNode 1", () => {
@@ -102,5 +101,3 @@ Deno.test("TreeNode 6", () => {
 
 	assertEquals(assert, expected)
 })
-
-

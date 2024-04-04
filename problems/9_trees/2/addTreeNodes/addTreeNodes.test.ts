@@ -3,7 +3,6 @@ import { TreeNode } from "../../1/TreeNode/TreeNode.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 import { jsonifyFn } from "../../../../test_utils/jsonifyFn.ts"
 
-
 const testFn = jsonifyFn(addTreeNodes)
 
 Deno.test("addTreeNodes 1", () => {
@@ -11,7 +10,7 @@ Deno.test("addTreeNodes 1", () => {
 	const expect = {
 		value: 1,
 		left: { value: 2, left: null, right: null },
-		right: { value: 3, left: null, right: null }
+		right: { value: 3, left: null, right: null },
 	}
 	assertEquals(assert, expect)
 })
@@ -21,7 +20,7 @@ Deno.test("addTreeNodes 2", () => {
 	const expect = {
 		value: 1,
 		left: null,
-		right: { value: 3, left: null, right: null }
+		right: { value: 3, left: null, right: null },
 	}
 	assertEquals(assert, expect)
 })
@@ -31,7 +30,7 @@ Deno.test("addTreeNodes 3", () => {
 	const expect = {
 		value: 1,
 		left: { value: 2, left: null, right: null },
-		right: null
+		right: null,
 	}
 	assertEquals(assert, expect)
 })
@@ -41,7 +40,7 @@ Deno.test("addTreeNodes 4", () => {
 	const expect = {
 		value: 1,
 		left: null,
-		right: null
+		right: null,
 	}
 	assertEquals(assert, expect)
 })
