@@ -18,6 +18,15 @@ import { TreeNode } from "../../1/TreeNode/TreeNode.ts"
  *    / \ / \    / \ / \
  *   4  5 6  7  7  6 5  4
  */
-export function reverseTree() {
-	return null
+export function reverseTree(root: TreeNode<number> | null) {
+	if (root === null) { return null } //if its null stop
+
+    const saved = root.right //save the right node so we can set the left to the right after
+    root.right = root.left
+    root.left = saved
+
+    reverseTree(root.left) //recursive for the left
+    reverseTree(root.right) //recursive for the right
+
+    return root //return the whole tree after it has been reversed
 }

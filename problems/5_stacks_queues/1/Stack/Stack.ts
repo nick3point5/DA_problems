@@ -9,7 +9,8 @@ import { Node } from "../../../4_nodes_list/1/Node/Node.ts"
  */
 export class Stack<T> {
 	head: Node<T> | null
-	constructor() {
+	constructor(head: Node<T> | null) {
+		this.head = head
 	}
 	/**
 	 * Pushes a new value onto the top of the stack.
@@ -18,6 +19,8 @@ export class Stack<T> {
 	 * @returns {void}
 	 */
 	push(value: T) {
+		let node = new Node(value, this.head)
+		this.head = node
 	}
 	/**
 	 * Pops the top element from the stack and returns it.
@@ -25,5 +28,9 @@ export class Stack<T> {
 	 * @return {T | null} The value of the element popped from the stack, or null if the stack is empty.
 	 */
 	pop() {
+		if (this.head === null) return null
+		const value = this.head
+		this.head = this.head.next
+		return value
 	}
 }

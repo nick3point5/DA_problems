@@ -7,6 +7,6 @@
  * reverseWords("hello") = "hello"
  * reverseWords("hello world") = "world hello"
  */
-export function reverseString(str: string): string {
-	return null
+export function reverseWords(str: string): string {
+	return str.split(" ").reverse().join(" ")
 }
