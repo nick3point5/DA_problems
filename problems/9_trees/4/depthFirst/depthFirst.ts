@@ -1,4 +1,4 @@
-import { TreeNode } from "../../1/TreeNode/TreeNode.ts";
+import { TreeNode } from "../../1/TreeNode/TreeNode.ts"
 
 /**
  * Performs a depth-first (left-to-right) search on the given binary tree node.
@@ -10,7 +10,7 @@ import { TreeNode } from "../../1/TreeNode/TreeNode.ts";
  *       1
  *      / \
  *     2   3
- * 
+ *
  * depthFirst([1, [2, [3, 4], 5, [6, 7]]]) => [1, 2, 3, 4, 5, 6, 7]
  *       1
  *      / \
