@@ -30,7 +30,6 @@ export type NestedArray = [number, [OptionalType<NestedArray>, OptionalType<Nest
  *    \ / \
  *    5 6  7
  */
-<<<<<<< HEAD
 export function makeTree(array: NestedArray) {
 	if (!array) {
 		return null;
@@ -56,8 +55,3 @@ export function makeTree(array: NestedArray) {
 	//if it is a recursion function then it will return the node that it created but the final return will be from function called first
 	return node;
 }
-=======
-export function makeTree() {
-	return null
-}
->>>>>>> 923da52243c88c89edb96b258594b238ad044005
