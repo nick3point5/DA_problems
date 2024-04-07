@@ -1,7 +1,6 @@
-import { NestedArray, makeTree } from "../../3/makeTree/makeTree.ts"
+import { makeTree, NestedArray } from "../../3/makeTree/makeTree.ts"
 import { depthFirst } from "./depthFirst.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
-
 
 Deno.test("depthFirst 1", () => {
 	assertEquals(depthFirst(null), [])

@@ -2,7 +2,6 @@ import { makeTree, NestedArray } from "./makeTree.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 import { jsonifyFn } from "../../../../test_utils/jsonifyFn.ts"
 
-
 const testFn = jsonifyFn(makeTree)
 
 Deno.test("makeTree 1", () => {
@@ -12,7 +11,7 @@ Deno.test("makeTree 1", () => {
 		left: null,
 		right: null,
 	}
-	
+
 	assertEquals(testFn(array), result)
 })
 
@@ -23,11 +22,11 @@ Deno.test("makeTree 2", () => {
 		left: {
 			value: 2,
 			left: null,
-			right: null
+			right: null,
 		},
 		right: null,
 	}
-	
+
 	assertEquals(testFn(array), result)
 })
 
@@ -39,10 +38,10 @@ Deno.test("makeTree 3", () => {
 		right: {
 			value: 3,
 			left: null,
-			right: null
+			right: null,
 		},
 	}
-	
+
 	assertEquals(testFn(array), result)
 })
 
@@ -53,15 +52,15 @@ Deno.test("makeTree 3", () => {
 		left: {
 			value: 2,
 			left: null,
-			right: null
+			right: null,
 		},
 		right: {
 			value: 3,
 			left: null,
-			right: null
+			right: null,
 		},
 	}
-	
+
 	assertEquals(testFn(array), result)
 })
 
@@ -74,27 +73,27 @@ Deno.test("makeTree 4", () => {
 			left: {
 				value: 4,
 				left: null,
-				right: null
+				right: null,
 			},
 			right: {
 				value: 5,
 				left: null,
-				right: null
-			}
+				right: null,
+			},
 		},
 		right: {
 			value: 3,
 			left: {
 				value: 6,
 				left: null,
-				right: null
+				right: null,
 			},
 			right: {
 				value: 7,
 				left: null,
-				right: null
-			}
-		}
+				right: null,
+			},
+		},
 	}
 	assertEquals(testFn(array), result)
 })
@@ -109,22 +108,22 @@ Deno.test("makeTree 4", () => {
 			right: {
 				value: 5,
 				left: null,
-				right: null
-			}
+				right: null,
+			},
 		},
 		right: {
 			value: 3,
 			left: {
 				value: 6,
 				left: null,
-				right: null
+				right: null,
 			},
 			right: {
 				value: 7,
 				left: null,
-				right: null
-			}
-		}
+				right: null,
+			},
+		},
 	}
 	assertEquals(testFn(array), result)
 })

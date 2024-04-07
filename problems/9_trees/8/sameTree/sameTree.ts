@@ -11,16 +11,16 @@ import { TreeNode } from "../../1/TreeNode/TreeNode.ts"
  *       1          1
  *      / \        / \
  *     2   3      2   3
- * 
+ *
  * sameTree([1, [2, 3]], [1, [3, 2]]) => false
  *       1          1
  *      / \        / \
  *     2   3      3   2
- * 
+ *
  * sameTree([1, [2, null]], [1, null]) => false
  *       1          1
- *      /        
- *     2   
+ *      /
+ *     2
  */
 export function sameTree() {
 	return null

@@ -10,7 +10,7 @@ import { TreeNode } from "../../1/TreeNode/TreeNode.ts"
  *       1          1
  *      / \        / \
  *     2   3      3   2
- * 
+ *
  * reverseTree([1, [[2, [4, 5]], [3, [6, 7]]]]) => [1, [[3, [7, 6]], [2, [5, 4]]]]
  *       1          1
  *      / \        / \
