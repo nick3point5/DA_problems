@@ -10,6 +10,27 @@
  * isAnagram('hello', 'hell') = false
  * isAnagram('hello', 'leolh') = true
  */
-export function isAnagram() {
-	return null
+export function isAnagram(str1: string, str2: string) {
+	const map1 = new Map<string, number>()
+	const map2 = new Map<string, number>()
+
+	for (const letter of str1) {
+		if (map1.has(letter)) {
+			map1.set(letter, map1.get(letter)! + 1)
+		} else {
+			map1.set(letter, 1)
+		}
+	}
+
+	for (const letter of str2) {
+		if (map2.has(letter)) {
+			map2.set(letter, map2.get(letter)! + 1)
+		} else {
+			map2.set(letter, 1)
+		}
+	}
+
+	
+
+	return false
 }
