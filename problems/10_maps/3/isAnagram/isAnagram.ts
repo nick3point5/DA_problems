@@ -30,7 +30,15 @@ export function isAnagram(str1: string, str2: string) {
 		}
 	}
 
-	
+	if (map1.size !== map2.size) {
+		return false
+	}
 
-	return false
+	for (const [key, value] of map1) {
+		if (map2.get(key) !== value) {
+			return false
+		}
+	}
+
+	return true
 }

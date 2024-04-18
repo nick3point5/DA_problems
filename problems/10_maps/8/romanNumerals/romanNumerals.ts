@@ -14,6 +14,31 @@
  * romanNumerals(1000) = "M"
  * romanNumerals(3999) = "MMMCMXCIX"
  */
-export function romanNumerals() {
-	return null
+export function romanNumerals(num: number): string {
+	const romanNumerals = new Map<number,string>([
+		[1, "I"],
+		[5, "V"],
+		[10, "X"],
+		[50, "L"],
+		[100, "C"],
+		[500, "D"],
+		[1000, "M"]
+	])
+
+	const specialCases = [
+		["DCCCC", "CM"],
+		["CCCC", "CD"],
+		["LXXXX", "XC"],
+		["XXXX", "XL"],
+		["VIIII", "IX"],
+		["IIII", "IV"],
+	]
+
+
+	let result = ""
+	let subtractor = 1000
+	
+	
+	
+	return result
 }
