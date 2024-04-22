@@ -14,31 +14,32 @@
  * romanNumerals(1000) = "M"
  * romanNumerals(3999) = "MMMCMXCIX"
  */
-export function romanNumerals(num: number): string {
-	const romanNumerals = new Map<number,string>([
-		[1, "I"],
-		[5, "V"],
-		[10, "X"],
-		[50, "L"],
-		[100, "C"],
-		[500, "D"],
-		[1000, "M"]
-	])
-
-	const specialCases = [
-		["DCCCC", "CM"],
-		["CCCC", "CD"],
-		["LXXXX", "XC"],
-		["XXXX", "XL"],
-		["VIIII", "IX"],
-		["IIII", "IV"],
-	]
-
+export function romanNumerals(input: number): string {
+	const romanNumerals = [ //dictionary instead of map because it has an explicit order
+		{ number: 1000, numeral: "M" },
+		{ number: 900, numeral: "CM" },
+		{ number: 500, numeral: "D" },
+		{ number: 400, numeral: "CD" },
+		{ number: 100, numeral: "C" },
+		{ number: 90, numeral: "XC" },
+		{ number: 50, numeral: "L" },
+		{ number: 40, numeral: "XL" },
+		{ number: 10, numeral: "X" },
+		{ number: 9, numeral: "IX" },
+		{ number: 5, numeral: "V" },
+		{ number: 4, numeral: "IV" },
+		{ number: 1, numeral: "I" },
+	];
 
 	let result = ""
-	let subtractor = 1000
+
+	for (const {number, numeral} of romanNumerals) {
+		while (input >= number) {
+			result = result.concat(numeral)
+			input -= number
+		}
+	}
 	
-	
-	
+
 	return result
 }
