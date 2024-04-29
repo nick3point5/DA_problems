@@ -1,10 +1,12 @@
 import { binaryTreeSearchPath } from "./binaryTreeSearchPath.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 import { treeParser } from "../../../../test_utils/treeParser.ts"
+import { dirname, fromFileUrl } from "https://deno.land/std/path/mod.ts"
 
+const directory = dirname(import.meta.url)
 
 Deno.test("binaryTreeSearchPath 1", () => {
-	const data = Deno.readTextFileSync("tree1.json")
+	const data = Deno.readTextFileSync(fromFileUrl(directory + "/tree1.json"))
 	const tree = treeParser<number>(data)!
 	const path = [1, 0]
 
@@ -12,7 +14,7 @@ Deno.test("binaryTreeSearchPath 1", () => {
 })
 
 Deno.test("binaryTreeSearchPath 2", () => {
-	const data = Deno.readTextFileSync("tree1.json")
+	const data = Deno.readTextFileSync(fromFileUrl(directory + "/tree1.json"))
 	const tree = treeParser<number>(data)!
 	const path = null
 
@@ -20,7 +22,7 @@ Deno.test("binaryTreeSearchPath 2", () => {
 })
 
 Deno.test("binaryTreeSearchPath 3", () => {
-	const data = Deno.readTextFileSync("tree1.json")
+	const data = Deno.readTextFileSync(fromFileUrl(directory + "/tree1.json"))
 	const tree = treeParser<number>(data)!
 	const path = [1, 2]
 
@@ -28,7 +30,7 @@ Deno.test("binaryTreeSearchPath 3", () => {
 })
 
 Deno.test("binaryTreeSearchPath 4", () => {
-	const data = Deno.readTextFileSync("tree2.json")
+	const data = Deno.readTextFileSync(fromFileUrl(directory + "/tree2.json"))
 	const tree = treeParser<number>(data)!
 	const path: number[] = [1, 3, 5, 6]
 
@@ -36,7 +38,7 @@ Deno.test("binaryTreeSearchPath 4", () => {
 })
 
 Deno.test("binaryTreeSearchPath 5", () => {
-	const data = Deno.readTextFileSync("tree3.json")
+	const data = Deno.readTextFileSync(fromFileUrl(directory + "/tree3.json"))
 	const tree = treeParser<number>(data)!
 	const path: number[] = [
 		31,
@@ -56,7 +58,7 @@ Deno.test("binaryTreeSearchPath 5", () => {
 })
 
 Deno.test("binaryTreeSearchPath 6", () => {
-	const data = Deno.readTextFileSync("tree4.json")
+	const data = Deno.readTextFileSync(fromFileUrl(directory + "/tree4.json"))
 	const tree = treeParser<number>(data)!
 	const path: number[] = [
 		2047,
@@ -89,7 +91,7 @@ Deno.test("binaryTreeSearchPath 6", () => {
 })
 
 Deno.test("binaryTreeSearchPath 7", () => {
-	const data = Deno.readTextFileSync("tree4.json")
+	const data = Deno.readTextFileSync(fromFileUrl(directory + "/tree4.json"))
 	const tree = treeParser<number>(data)!
 	const path: number[] = [
 		2047,
