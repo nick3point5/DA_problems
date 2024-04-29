@@ -11,7 +11,7 @@ import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
  * wordSearch1D(["h", "e", "l", "l", "o", " ", "w", "o", "r", "l", "d"], "hello") = 0
  * wordSearch1D(["h", "e", "l", "l", "o", " ", "w", "o", "r", "l", "d"], "foo") = -1
  * wordSearch1D(["h", "e", "l", "l", "o", " ", "w", "o", "r", "l", "d"], "") = -1
- */
+ */ 
 Deno.test("wordSearch1D 1", () => {
 	const board = ["h", "e", "l", "l", "o", " ", "w", "o", "r", "l", "d"]
 	const word = "world"
@@ -34,4 +34,10 @@ Deno.test("wordSearch1D 4", () => {
 	const board = ["h", "e", "l", "l", "o", " ", "w", "o", "r", "l", "d"]
 	const word = ""
 	assertEquals(wordSearch1D(board, word), -1)
+})
+
+Deno.test("wordSearch1D 5", () => {
+	const board = ["h", "e", "l", "l", "o", " ", "w", "o", "r", "l", "d", "z", "e", "q", "q", "o"]
+	const word = "world"
+	assertEquals(wordSearch1D(board, word), 6)
 })

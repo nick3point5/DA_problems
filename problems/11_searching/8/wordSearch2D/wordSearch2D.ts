@@ -15,6 +15,7 @@
 	wordSearch2D(board, "SEE") => null
 	wordSearch2D(board, "CAT") => [1, 2]
  */
-export function wordSearch2D() {
-	return null
+export function wordSearch2D(board: string[][], word: string): [number, number] {
+	
+	return [1,1]
 }
