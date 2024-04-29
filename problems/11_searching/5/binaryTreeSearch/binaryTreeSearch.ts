@@ -42,6 +42,22 @@ import { TreeNode } from "../../../9_trees/1/TreeNode/TreeNode.ts"
  *          / \
  *         4   6
  */
-export function binaryTreeSearch() {
-	return null
+export function binaryTreeSearch(root: TreeNode<number>, target: number): TreeNode<number> | null {
+	while (true) {
+		if (target < root.value) {
+			if (root.left) {
+				root = root.left
+			} else {
+				return null
+			}
+		} else if (target === root.value) {
+			return root
+		} else {
+			if (root.right) {
+				root = root.right
+			} else {
+				return null
+			}
+		}
+	}
 }

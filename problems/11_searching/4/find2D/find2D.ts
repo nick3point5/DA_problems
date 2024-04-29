@@ -21,6 +21,14 @@
  *  [7, 8, 9]
  * ], 10) => null
  */
-export function find2D() {
+export function find2D(matrix: number[][], target:number): [number, number] | null {
+	for (let i = 0; i < matrix.length; i++) {
+		for (let j = 0; j < matrix[i].length; j++) {
+			if (matrix[i][j] === target) {
+				return [i, j]
+			}
+		}
+	}
+
 	return null
 }
