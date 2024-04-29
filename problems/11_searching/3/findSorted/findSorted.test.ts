@@ -1,7 +1,6 @@
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 import { findSorted } from "./findSorted.ts"
 
-
 const n = 100_000_000
 const big_array = new Array(n)
 
@@ -59,7 +58,6 @@ Deno.test("findSorted 7", () => {
 			return end - start
 		}
 	}
-
 
 	const getUnsortedTime = timeDiff((array: number[], target: number) => array.indexOf(target))
 	const getSortedTime = timeDiff(findSorted)

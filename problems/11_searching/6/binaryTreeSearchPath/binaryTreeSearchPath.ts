@@ -11,7 +11,7 @@ import { TreeNode } from "../../../9_trees/1/TreeNode/TreeNode.ts"
  * 	[1, [0, 2]],
  *  0
  * ) => [1, 0]
- * 
+ *
  *       1
  *      / \
  *     0   2
@@ -20,7 +20,7 @@ import { TreeNode } from "../../../9_trees/1/TreeNode/TreeNode.ts"
  * 	[1, [[0, [null, null], [3, [2, [null, null]], [5, [4, null, null], [6, null, null]]]]]],
  * 	2
  * ) => [1, 3, 2]
- * 
+ *
  *       1
  *      / \
  *     0   3
@@ -33,7 +33,7 @@ import { TreeNode } from "../../../9_trees/1/TreeNode/TreeNode.ts"
  * 	[1, [[0, [null, null], [3, [2, [null, null]], [5, [4, null, null], [6, null, null]]]]]],
  * 	6
  * ) => [1, 3, 5, 6]
- * 
+ *
  *       1
  *      / \
  *     0   3
@@ -46,7 +46,7 @@ import { TreeNode } from "../../../9_trees/1/TreeNode/TreeNode.ts"
  * 	[1, [[0, [null, null], [3, [2, [null, null]], [5, [4, null, null], [6, null, null]]]]]],
  * 	7
  * ) => null
- * 
+ *
  *       1
  *      / \
  *     0   3

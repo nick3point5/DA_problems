@@ -8,10 +8,10 @@ export function treeParser<T>(data: string) {
 			return null
 		}
 		const node = new TreeNode(treeData.value)
-		if(treeData.left) {
+		if (treeData.left) {
 			node.left = createTreeNode(treeData.left)
 		}
-		if(treeData.right) {
+		if (treeData.right) {
 			node.right = createTreeNode(treeData.right)
 		}
 		return node
