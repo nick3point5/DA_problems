@@ -55,7 +55,7 @@ export function caesarCipher2(s: string, k: number) {
 
 	let result = ""
 	for (let i = 0; i < s.length; i++) {
-		const letter = s[i];
+		const letter = s[i]
 		result += map[letter]
 	}
 

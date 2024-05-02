@@ -10,6 +10,16 @@
  * twoSum([1, 2, 3, 4, 5], 10) => null
  * twoSum([2, 7, 11, 15], 9) => [0, 1]
  */
-export function twoSum() {
+export function twoSum(array: number[], target: number): [number, number] | null {
+	for (let i = 0; i < array.length; i++) {
+		for (let j = 0; j < array.length; j++) {
+			if (j !== i) {
+				if (array[i] + array[j] === target) {
+					return [i, j]
+				}
+			}
+		}
+	}
+
 	return null
 }

@@ -11,7 +11,7 @@ import { TreeNode } from "../../../9_trees/1/TreeNode/TreeNode.ts"
  * 	[1, [0, 2]],
  *  0
  * ) => [1, 0]
- * 
+ *
  *       1
  *      / \
  *     0   2
@@ -20,7 +20,7 @@ import { TreeNode } from "../../../9_trees/1/TreeNode/TreeNode.ts"
  * 	[1, [[0, [null, null], [3, [2, [null, null]], [5, [4, null, null], [6, null, null]]]]]],
  * 	2
  * ) => [1, 3, 2]
- * 
+ *
  *       1
  *      / \
  *     0   3
@@ -33,7 +33,7 @@ import { TreeNode } from "../../../9_trees/1/TreeNode/TreeNode.ts"
  * 	[1, [[0, [null, null], [3, [2, [null, null]], [5, [4, null, null], [6, null, null]]]]]],
  * 	6
  * ) => [1, 3, 5, 6]
- * 
+ *
  *       1
  *      / \
  *     0   3
@@ -46,7 +46,7 @@ import { TreeNode } from "../../../9_trees/1/TreeNode/TreeNode.ts"
  * 	[1, [[0, [null, null], [3, [2, [null, null]], [5, [4, null, null], [6, null, null]]]]]],
  * 	7
  * ) => null
- * 
+ *
  *       1
  *      / \
  *     0   3
@@ -55,6 +55,7 @@ import { TreeNode } from "../../../9_trees/1/TreeNode/TreeNode.ts"
  *          / \
  *         4   6
  */
+<<<<<<< HEAD
 export function binaryTreeSearchPath(root: TreeNode<number>, target: number): number[] | null {
 	const returnArr = []
 
@@ -79,3 +80,8 @@ export function binaryTreeSearchPath(root: TreeNode<number>, target: number): nu
 		}
 	}
 }
+=======
+export function binaryTreeSearch() {
+	return null
+}
+>>>>>>> 18f0b57fa88efef7f55073981df30103472c3820
