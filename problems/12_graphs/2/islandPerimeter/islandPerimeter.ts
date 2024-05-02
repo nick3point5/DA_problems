@@ -27,8 +27,37 @@
  * ]
  * islandArea(map3) = 24
  */
-export function islandPerimeter(map: number[][]): number {
-	
+export function islandPerimeter3(map: number[][]): number {
+	const rows = map.length
+	let perimeter = 0
 
-	return 1
+	for (let row = 0; row < rows; row++) {
+		for (let column = 0; column < map[row].length; column++) {
+			const piece = map[row][column]
+
+			if (piece > 0) {
+				 //first check means that the current piece is the first index, so the left will be out of bounds, second means its 0
+                if (column === 0 || map[row][column - 1] === 0) {
+					perimeter++
+				}
+                
+				 //first check means that the current piece is the last index, so the right will be out of bounds, second means its 0
+                if (column === map[row].length - 1 || map[row][column + 1] === 0) { 
+					perimeter++
+				}
+               
+				 //first check means that the current piece is the top row, so up will be out of bounds, second means its 0
+                if (row === 0 || map[row - 1][column] === 0) {
+					perimeter++
+				}
+                
+				//first check means that the current piece is the bottom row, so down will be out of bounds, second means its 0
+                if (row === rows - 1 || map[row + 1][column] === 0) {
+					perimeter++
+				}
+            }
+		}
+	}
+
+	return perimeter
 }

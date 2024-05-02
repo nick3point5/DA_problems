@@ -1,6 +1,6 @@
 /**
  * Calculate the number of the island represented by the given map.
- * Land is represented by numbers greater than 0 and water by 0s
+ * Land is represented by numbers greater than 0 and water by 0s water is also represented by out of bounds.
  * Islands are land connected horizontally or vertically.
  * Islands are not connected diagonally.
  *

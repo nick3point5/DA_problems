@@ -1,6 +1,6 @@
 /**
  * Calculate the volume of the biggest island represented by the given map.
- * Land is represented by numbers greater than 0 and water by 0s
+ * Land is represented by numbers greater than 0 and water by 0s water is also represented by out of bounds.
  * Islands are land connected horizontally or vertically.
  * Islands are not connected diagonally.
  * The volume of an island is the sum of all cells in the island.

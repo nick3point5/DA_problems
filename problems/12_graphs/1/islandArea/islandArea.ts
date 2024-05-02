@@ -1,6 +1,6 @@
 /**
  * Calculate the area of the island represented by the given map.
- * Land is represented by numbers greater than 0 and water by 0s
+ * Land is represented by numbers greater than 0 and water by 0s water is also represented by out of bounds.
  * There is guaranteed to be exactly one island in the map
  *
  * @param {number[][]} map - The map representing the island with values indicating land or water.
