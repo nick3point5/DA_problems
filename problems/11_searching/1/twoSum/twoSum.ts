@@ -3,7 +3,7 @@
  *
  * @param {number[]} array - The array of numbers to search.
  * @param {number} target - The target sum.
- * @return {[number, number]} An array containing the indices of the two numbers that add up to the target, or null if no such numbers exist.
+ * @return {[number, number] | null} An array containing the indices of the two numbers that add up to the target, or null if no such numbers exist.
  * @example
  * twoSum([3, 2, 4], 6) => [1, 2]
  * twoSum([1, 2, 3, 4, 7], 7) => [2, 3]
