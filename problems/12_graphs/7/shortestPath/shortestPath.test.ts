@@ -5,7 +5,7 @@ import { GraphNode } from "../../5/GraphNode/GraphNode.ts"
 
 function getDistance(node: GraphNode<unknown> | null) {
 	let distance = -1
-	while(node !== null) {
+	while (node !== null) {
 		distance++
 		node = node.previous
 	}
@@ -18,7 +18,7 @@ Deno.test("shortestPath 1", () => {
 		[4, 5, 6],
 		[7, 8, 9],
 	]
-	
+
 	const nodeGrid = createGraph(grid)
 	const root = nodeGrid[0][0]!
 
@@ -37,7 +37,7 @@ Deno.test("shortestPath 2", () => {
 		[4, 5, 6],
 		[7, 8, 9],
 	]
-	
+
 	const nodeGrid = createGraph(grid)
 	const root = nodeGrid[0][0]!
 

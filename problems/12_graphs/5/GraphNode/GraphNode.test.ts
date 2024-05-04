@@ -2,7 +2,6 @@ import { GraphNode } from "./GraphNode.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 import { createGraph } from "../../../../test_utils/createGraph.ts"
 
-
 Deno.test("graphNode 1", () => {
 	const node = new GraphNode(1)
 	assertEquals(node.value, 1)
@@ -23,7 +22,7 @@ Deno.test("graphNode 3", () => {
 	const nodes = [node]
 	const n = 10
 	for (let i = 1; i < n; i++) {
-		const newNode = new GraphNode(i+1)
+		const newNode = new GraphNode(i + 1)
 		newNode.previous = node
 		nodes.push(newNode)
 		node = newNode
@@ -60,7 +59,7 @@ Deno.test("graphNode 5", () => {
 		[4, 5, 6],
 		[7, 8, 9],
 	]
-	
+
 	const nodeGrid = createGraph(grid)
 	const node = nodeGrid[0][0]
 
@@ -75,7 +74,7 @@ Deno.test("graphNode 6", () => {
 		[4, 5, 6],
 		[7, 8, 9],
 	]
-	
+
 	const nodeGrid = createGraph(grid)
 	const node = nodeGrid[1][1]
 
@@ -93,7 +92,7 @@ Deno.test("graphNode 7", () => {
 		[4, 5, 6],
 		[7, null, 9],
 	]
-	
+
 	const nodeGrid = createGraph(grid)
 	const node = nodeGrid[1][1]
 

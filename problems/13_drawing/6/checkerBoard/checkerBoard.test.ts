@@ -2,7 +2,6 @@ import { checkerBoard } from "./checkerBoard.solution.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 import { dirname, fromFileUrl } from "https://deno.land/std/path/mod.ts"
 
-
 const directory = dirname(import.meta.url)
 
 Deno.test("checkerBoard 1", () => {

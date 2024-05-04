@@ -33,7 +33,6 @@ function comparePaths(path: GraphNode<unknown>[], coordinates: [number, number][
 		if (node !== gridNote) {
 			return false
 		}
-
 	}
 	return true
 }
@@ -50,7 +49,6 @@ Deno.test("shortestDelayedPath 1", () => {
 
 	const target = nodeGrid[0][2]!
 	const actual = shortestDelayedPath(root, target)
-
 
 	const distance = getDistance(target)
 
@@ -71,7 +69,6 @@ Deno.test("shortestDelayedPath 2", () => {
 	const target = nodeGrid[0][2]!
 	const actual = shortestDelayedPath(root, target)
 
-
 	const distance = getDistance(target)
 
 	assertEquals(actual, target)
@@ -91,7 +88,6 @@ Deno.test("shortestDelayedPath 3", () => {
 	const target = nodeGrid[0][2]!
 	const actual = shortestDelayedPath(root, target)
 
-
 	const distance = getDistance(target)
 
 	assertEquals(actual, target)
@@ -110,7 +106,6 @@ Deno.test("shortestDelayedPath 4", () => {
 
 	const target = nodeGrid[0][2]!
 	const actual = shortestDelayedPath(root, target)
-
 
 	const distance = getDistance(target)
 
@@ -137,7 +132,6 @@ Deno.test("shortestDelayedPath 4", () => {
 
 	const target = nodeGrid[9][9]!
 	const actual = shortestDelayedPath(root, target)
-
 
 	const distance = getDistance(target)
 
@@ -200,11 +194,9 @@ Deno.test("shortestDelayedPath 5", () => {
 		[2, 4],
 	]
 
-
 	const distance = getDistance(target)
 
 	assertEquals(actual, target)
 	assertEquals(distance, 30)
 	assertEquals(comparePaths(path, expectedPath, nodeGrid), true)
-
 })
