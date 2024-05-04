@@ -9,28 +9,19 @@
  * uniqueWord("hello hello world") = "world"
  * uniqueWord("foo bar foo baz foo bar") = "baz"
  */
-export function uniqueWord(s: string): string {
-	let words =  s.split(" ")
+export function uniqueWord(s: string) {
+	const countMap = new Map<string, number>()
 
-	if (words.length === 1) {
-		return words[0]
+	for (const word of s.split(" ")) {
+		countMap.set(word, (countMap.get(word) ?? 0) + 1)
 	}
 
-	let wordMap = new Map<string, number>()
-
-	for (const word of words) {
-		if (wordMap.get(word)) {
-			wordMap.set(word, wordMap.get(word)! + 1)
-		} else {
-			wordMap.set(word, 1)
+	let unique = ""
+	countMap.forEach((count, word) => {
+		if (count === 1) {
+			unique = word
 		}
-	}
+	})
 
-	for (const [key, value] of wordMap) {
-		if (value === 1) {
-			return key
-		}
-	}
-
-	return ""
+	return unique
 }

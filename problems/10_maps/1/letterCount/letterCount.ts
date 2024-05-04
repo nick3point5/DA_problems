@@ -9,6 +9,16 @@
  * letterCount("") = Map()
  * letterCount("abracadabra") = Map("a" -> 5, "b" -> 2, "r" -> 2, "c" -> 1, "d" -> 1)
  */
-export function letterCount() {
-	return null
+export function letterCount(s: string) {
+	const map = new Map<string, number>()
+	
+	for (const letter of s) {
+        if (map.has(letter)) {
+            map.set(letter, map.get(letter) ! + 1)
+        } else {
+            map.set(letter, 1)
+        }
+    }
+
+	return map
 }

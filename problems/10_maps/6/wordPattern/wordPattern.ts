@@ -9,6 +9,32 @@
  * wordPattern("abba", "dog cat cat fish") = false
  * wordPattern("aaaa", "dog cat cat dog") = false
  */
-export function wordPattern() {
-	return null
+export function wordPattern(pattern: string, words: string): boolean {
+	const wordsArray = words.split(" ")
+	const patternArray = pattern.split("")
+
+	if (wordsArray.length !== patternArray.length) {
+		return false
+	}
+
+	const wordToPattern = new Map<string, string>()
+	const patternToWord = new Map<string, string>()
+
+	for (let i = 0; i < wordsArray.length; i++) {
+		const word = wordsArray[i]
+		const patternChar = patternArray[i]
+
+		if (wordToPattern.has(word) && wordToPattern.get(word) !== patternChar) {
+			return false
+		}
+
+		if (patternToWord.has(patternChar) && patternToWord.get(patternChar) !== word) {
+			return false
+		}
+
+		wordToPattern.set(word, patternChar)
+		patternToWord.set(patternChar, word)
+	}
+
+	return true
 }

@@ -30,6 +30,40 @@ import { TreeNode } from "../../1/TreeNode/TreeNode.ts"
  *    /
  *   3
  */
-export function isBalance() {
-	return null
+export function isBalance(root: TreeNode<number> | null) {
+	if (root === null) {
+		return true
+	}
+
+	let left = 0
+	let right = 0
+
+	checkNode(root.left, "left")
+	checkNode(root.right, "right")
+	
+	function checkNode(node: TreeNode<number> | null, side: string) {
+		if (side === "left") {
+			if (node !== null) {
+				left++
+
+				if (node.left !== null) {
+					checkNode(node.left, "left")
+				} else if (node.right !== null) {
+					checkNode(node.right, "left")
+				}
+			}
+		} else {
+			if (node !== null) {
+				right++
+
+				if (node.left !== null) {
+					checkNode(node.left, "right")
+				} else if (node.right !== null) {
+					checkNode(node.right, "right")
+				}
+			}
+		}
+	}
+
+	return Math.abs(left-right) <= 1
 }

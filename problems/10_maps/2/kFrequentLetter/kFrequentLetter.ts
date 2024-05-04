@@ -11,6 +11,23 @@
  * kFrequentLetter('cheesy beans', 1) = 'e'
  * kFrequentLetter('cheesy beans', 2) = 's'
  */
-export function kFrequentLetter() {
-	return null
+export function kFrequentLetter(s: string, k: number) {
+    const map = new Map<string, number>()
+
+    for (const letter of s) {
+        if (map.has(letter)) {
+            map.set(letter, map.get(letter)! + 1)
+        } else {
+            map.set(letter, 1)
+        }
+    }
+
+    const array:[string,number][] = []
+
+    for (const index of map) {
+        array.push(index)
+    }
+    array.sort((a,b) => b[1] - a[1])
+
+    return array[k - 1][0]
 }
