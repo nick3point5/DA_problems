@@ -55,7 +55,6 @@ import { TreeNode } from "../../../9_trees/1/TreeNode/TreeNode.ts"
  *          / \
  *         4   6
  */
-<<<<<<< HEAD
 export function binaryTreeSearchPath(root: TreeNode<number>, target: number): number[] | null {
 	const returnArr = []
 
@@ -80,8 +79,3 @@ export function binaryTreeSearchPath(root: TreeNode<number>, target: number): nu
 		}
 	}
 }
-=======
-export function binaryTreeSearch() {
-	return null
-}
->>>>>>> 18f0b57fa88efef7f55073981df30103472c3820
