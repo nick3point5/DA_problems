@@ -8,5 +8,5 @@
  * reverseWords("hello world") = "world hello"
  */
 export function reverseWords(str: string): string {
-	return null
+	return str.split(" ").reverse().join(" ")
 }

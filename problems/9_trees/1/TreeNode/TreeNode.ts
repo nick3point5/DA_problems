@@ -9,6 +9,9 @@ export class TreeNode<T> {
 	 * @param {TreeNode<T> | null} left - the left child node (optional)
 	 * @param {TreeNode<T> | null} right - the right child node (optional)
 	 */
-	constructor() {
+	constructor(value: T, left: TreeNode<T> | null = null, right: TreeNode<T> | null = null) {
+		this.value = value
+		this.left = left
+		this.right = right
 	}
 }

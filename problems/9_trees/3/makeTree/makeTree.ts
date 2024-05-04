@@ -30,6 +30,28 @@ export type NestedArray = [number, [OptionalType<NestedArray>, OptionalType<Nest
  *    \ / \
  *    5 6  7
  */
-export function makeTree() {
-	return null
+export function makeTree(array: NestedArray) {
+	if (!array) {
+		return null;
+	}
+	
+	//split array into base and then the branches for example [1, [null, null]] will be turned into base = [1] branches = [null,null]
+	const base = array[0];
+	const branches = array[1];
+	//make node of the base
+	const node = new TreeNode(base);
+
+	//check if there is a left or right node if there is then call the makeTree function again 
+	if (branches[0]) {
+		//make left node then call the makeTree function again to check if there are any new branches connected to the left branch
+        node.left = makeTree(branches[0]);
+    }
+    if (branches[1]) {
+		//make right node then call the makeTree function again to check if there are any new branches connected to the right branch
+        node.right = makeTree(branches[1]);
+    }
+
+	//returns the base node after all the recursion is done
+	//if it is a recursion function then it will return the node that it created but the final return will be from function called first
+	return node;
 }

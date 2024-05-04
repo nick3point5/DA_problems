@@ -22,6 +22,22 @@ import { TreeNode } from "../../1/TreeNode/TreeNode.ts"
  *      /
  *     2
  */
-export function sameTree() {
-	return null
+export function sameTree(tree1: TreeNode<number> | null, tree2: TreeNode<number> | null) : boolean {
+    //check if node is both null
+    if (tree1 === null && tree2 === null) {
+        return true
+    }
+
+    //check if one node is null but not the other
+    if (tree1 === null || tree2 === null) {
+        return false
+    }
+
+    //check if values are not equal
+    if (tree1.value !== tree2.value) {
+        return false
+    }
+
+    //recursion until we know the whole tree
+    return sameTree(tree1.left, tree2.left) && sameTree(tree1.right, tree2.right)
 }

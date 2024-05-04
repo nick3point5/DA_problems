@@ -14,6 +14,31 @@
  * caesarCipher("hello", 26) = "hello"
  * caesarCipher("hello", 27) = "ifmmp"
  */
-export function caesarCipher() {
-	return null
+export function caesarCipher(s: string, k: number): string  {
+	if (k > 26) {
+		k = k % 26
+	} else if (k === 26) {
+		return s
+	}
+
+	const lettersArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+	const lettersMap = new Map<string, string>()
+
+	for (let i = 0; i < lettersArray.length; i++) {
+		if (i === lettersArray.length - 1) {
+			lettersMap.set(lettersArray[i], lettersArray[k-1])
+		} else {
+			lettersMap.set(lettersArray[i], lettersArray[i+k])
+		}
+	}
+
+	let returnString = ""
+
+	for (const letter of s) {
+		const value = lettersMap.get(letter)
+
+		returnString += value
+	}
+
+	return returnString
 }

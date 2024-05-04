@@ -12,6 +12,7 @@ const morseMap: Map<string, string> = new Map(Object.entries(jsonData))
  * morseCode("SOS") = "... --- ..."
  * morseCode("HELLO") = ".-.-.---..-.--."
  */
-export function morseCode() {
-	return null
+export function morseCode(s: string): string {
+	return s.toLowerCase().split("").map((letter) => morseMap.get(letter)).join(" ")
+	//lowercase the word, split all the letters, map each letter to morse code, join all the letters
 }
