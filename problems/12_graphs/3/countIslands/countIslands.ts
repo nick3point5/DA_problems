@@ -28,6 +28,33 @@
  * ]
  * countIslands(map2) = 4
  */
-export function countIslands() {
-	return null
+export function countIslands(map: number[][]): number {
+	let islands = 0
+	const rows = map.length
+	const columns = map[0].length
+
+	function depthFirst(row: number, column: number) {
+		if (row >= 0 && row < rows && column >= 0 && column < columns && map[row][column] !== 0) {
+            map[row][column] = 0
+
+			depthFirst(row - 1, column)
+			depthFirst(row + 1, column)
+			depthFirst(row, column - 1)
+			depthFirst(row, column + 1)
+        }
+	}
+
+	for (let row = 0; row < rows; row++) {
+		for (let column = 0; column < columns; column++) {
+			const piece = map[row][column]
+
+			if (piece > 0) {
+				islands++
+				depthFirst(row, column)
+			}
+		}
+	}
+
+
+	return islands
 }
