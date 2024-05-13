@@ -1,4 +1,4 @@
-import { GraphNode } from "../../5/GraphNode/GraphNode.solution.ts"
+import { GraphNode } from "../../5/GraphNode/GraphNode.ts"
 
 /**
  * Finds the shortest path to the target node in a graph from the root node. Returns null if no path is found. The path will be set by the `previous` property on each node.
