@@ -1,4 +1,4 @@
-import { GraphNode } from "../problems/12_graphs/5/GraphNode/GraphNode.solution.ts"
+import { GraphNode } from "../problems/12_graphs/5/GraphNode/GraphNode.ts"
 
 export function createGraph(grid: (number | null)[][]) {
 	function addNeighbors(node: GraphNode<number>, nodeGrid: (GraphNode<number> | null)[][], coordinates: [number, number]) {

@@ -7,6 +7,8 @@ import { GraphNode } from "../../5/GraphNode/GraphNode.solution.ts"
  * @param {number} target - The target value to search for.
  * @return {GraphNode<number> | null} The node containing the target value, or null if not found.
  */
-export function searchGraph() {
+export function searchGraph(node: GraphNode<number>, target: number): GraphNode<number> | null {
+	
+
 	return null
 }
