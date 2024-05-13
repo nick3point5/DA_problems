@@ -8,7 +8,22 @@ import { GraphNode } from "../../5/GraphNode/GraphNode.ts"
  * @return {GraphNode<number> | null} The node containing the target value, or null if not found.
  */
 export function searchGraph(node: GraphNode<number>, target: number): GraphNode<number> | null {
-	
+	function searchNeighbors(node: GraphNode<number>): GraphNode<number> | null {
+		node.visited = true
 
-	return null
+		for (const neighbor of node.neighbors) {
+			if (neighbor.value === target) {
+				return neighbor
+			} else if (neighbor.visited === false) {
+				const result = searchNeighbors(neighbor)
+				if (result) {
+					return result
+				}
+			}
+		}
+
+		return null
+	}
+
+	return searchNeighbors(node)
 }
