@@ -1,4 +1,4 @@
-import { GraphNode } from "../../5/GraphNode/GraphNode.solution.ts"
+import { GraphNode } from "../../5/GraphNode/GraphNode.ts"
 
 /**
  * Searches for a target value in a graph starting from a given node.
