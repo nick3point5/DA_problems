@@ -7,7 +7,7 @@
  * @property {number} - The distance of the graph node. Defaults to 0.
  * @property {GraphNode<T> | null} - The previous node in the shortest path. Defaults to null.
  */
-export class graphNode {
+export class GraphNode {
     constructor() {
     }
 }
