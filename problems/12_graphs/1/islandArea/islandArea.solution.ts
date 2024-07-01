@@ -1,6 +1,6 @@
 /**
  * Calculate the area of the island represented by the given map.
- * Land is represented by numbers greater than 0 and water by 0s water is also represented by out of bounds.
+ * Land is represented by numbers greater than 0 and water by 0s
  * There is guaranteed to be exactly one island in the map
  *
  * @param {number[][]} map - The map representing the island with values indicating land or water.
@@ -28,13 +28,14 @@
  * islandArea(map3) = 12
  */
 export function islandArea(map: number[][]): number {
-	let totalArea = 0
-
-	for (const area of map.flat()) {
-		if (area > 0) {
-			totalArea += 1
+	let area = 0
+	for (let i = 0; i < map.length; i++) {
+		for (let j = 0; j < map[i].length; j++) {
+			if (map[i][j] !== 0) {
+				area++
+			}
 		}
 	}
 
-	return totalArea
+	return area
 }

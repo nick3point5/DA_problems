@@ -29,6 +29,38 @@
  * ]
  * biggestIsland(map2) = 10
  */
-export function biggestIsland() {
-	return null
+export function biggestIsland(map: number[][]): number {
+	const rows = map.length
+	const columns = map[0].length
+	let returnVal = 0
+
+	function depthFirst(row: number, column: number) {
+		if (row >= 0 && row < rows && column >= 0 && column < columns && map[row][column] !== 0) {
+			let size = map[row][column] //set it to the the number of the piece so if its 10 then the piece adds 10 to the island
+			map[row][column] = 0
+
+			size += depthFirst(row - 1, column)
+			size += depthFirst(row + 1, column)
+			size += depthFirst(row, column - 1)
+			size += depthFirst(row, column + 1)
+
+			return size
+        }
+		return 0 
+	}
+
+	for (let row = 0; row < rows; row++) {
+		for (let column = 0; column < columns; column++) {
+			const piece = map[row][column]
+
+			if (piece > 0) {
+				const size = depthFirst(row, column)
+				if (size > returnVal) {
+					returnVal = size
+				}
+			}
+		}
+	}
+
+    return returnVal
 }

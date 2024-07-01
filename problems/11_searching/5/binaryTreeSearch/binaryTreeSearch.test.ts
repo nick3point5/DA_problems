@@ -11,7 +11,7 @@ Deno.test("binaryTreeSearch 1", () => {
 	const tree1 = treeParser<number>(data)!
 	const expectedNode = new TreeNode(0)
 
-	assertEquals(JSON.stringify((binaryTreeSearch(tree1, 0))),(JSON.stringify(expectedNode)))
+	assertEquals(JSON.stringify(binaryTreeSearch(tree1, 0)), JSON.stringify(expectedNode))
 })
 
 Deno.test("binaryTreeSearch 2", () => {
@@ -19,7 +19,7 @@ Deno.test("binaryTreeSearch 2", () => {
 	const tree1 = treeParser<number>(data)!
 	const expectedNode = null
 
-	assertEquals(JSON.stringify(binaryTreeSearch(tree1, 7)), (JSON.stringify(expectedNode)))
+	assertEquals(JSON.stringify(binaryTreeSearch(tree1, 7)), JSON.stringify(expectedNode))
 })
 
 Deno.test("binaryTreeSearch 3", () => {
@@ -27,7 +27,7 @@ Deno.test("binaryTreeSearch 3", () => {
 	const tree1 = treeParser<number>(data)!
 	const expectedNode = new TreeNode(2)
 
-	assertEquals(JSON.stringify(binaryTreeSearch(tree1, 2)), (JSON.stringify(expectedNode)))
+	assertEquals(JSON.stringify(binaryTreeSearch(tree1, 2)), JSON.stringify(expectedNode))
 })
 
 Deno.test("binaryTreeSearch 4", () => {
@@ -35,7 +35,7 @@ Deno.test("binaryTreeSearch 4", () => {
 	const tree1 = treeParser<number>(data)!
 	const expectedNode = new TreeNode(6)
 
-	assertEquals(JSON.stringify(binaryTreeSearch(tree1, 6)), (JSON.stringify(expectedNode)))
+	assertEquals(JSON.stringify(binaryTreeSearch(tree1, 6)), JSON.stringify(expectedNode))
 })
 
 Deno.test("binaryTreeSearch 5", () => {
@@ -43,7 +43,7 @@ Deno.test("binaryTreeSearch 5", () => {
 	const tree1 = treeParser<number>(data)!
 	const expectedNode = new TreeNode(99)
 
-	assertEquals(JSON.stringify(binaryTreeSearch(tree1, 99)), (JSON.stringify(expectedNode)))
+	assertEquals(JSON.stringify(binaryTreeSearch(tree1, 99)), JSON.stringify(expectedNode))
 })
 
 Deno.test("binaryTreeSearch 6", () => {
@@ -51,7 +51,7 @@ Deno.test("binaryTreeSearch 6", () => {
 	const tree1 = treeParser<number>(data)!
 	const expectedNode = new TreeNode(9999)
 
-	assertEquals(JSON.stringify(binaryTreeSearch(tree1, 9999)), (JSON.stringify(expectedNode)))
+	assertEquals(JSON.stringify(binaryTreeSearch(tree1, 9999)), JSON.stringify(expectedNode))
 })
 
 Deno.test("binaryTreeSearch 7", () => {
@@ -59,5 +59,5 @@ Deno.test("binaryTreeSearch 7", () => {
 	const tree1 = treeParser<number>(data)!
 	const expectedNode = new TreeNode(5, new TreeNode(4), new TreeNode(6))
 
-	assertEquals(JSON.stringify(binaryTreeSearch(tree1, 5)), (JSON.stringify(expectedNode)))
+	assertEquals(JSON.stringify(binaryTreeSearch(tree1, 5)), JSON.stringify(expectedNode))
 })
