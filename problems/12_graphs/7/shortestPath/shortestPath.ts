@@ -8,15 +8,24 @@ import { GraphNode } from "../../5/GraphNode/GraphNode.ts"
  * @return {GraphNode<number> | null} - The target node, which previous property represents the shortest path from the root to the target, or null if no path is found.
  */
 export function shortestPath(root: GraphNode<number>, target: number): GraphNode<number> | null {
+	const queue = [root]
+    root.visited = true
 
-	function breathFirst(node: GraphNode<number>, distance: number) {
-		node.visited = true
-		node.distance = distance
+    while (queue.length > 0) {
+        const currentNode = queue.shift()!
 
-		
-	}
+        if (currentNode.value === target) {
+            return currentNode
+        }
 
-	shortestPath(root, 0)
+        for (const neighbor of currentNode.neighbors) {
+            if (neighbor.visited === false) {
+                neighbor.visited = true
+                neighbor.previous = currentNode
+                queue.push(neighbor)
+            }
+        }
+    }
 
-	return null
+    return null
 }
