@@ -17,6 +17,35 @@ import { GraphNode } from "../../5/GraphNode/GraphNode.ts"
  * @param {GraphNode<number>} target - The target node to reach.
  * @return {GraphNode<number> | null} The target node, which previous property represents the shortest path from the root to the target, or null if no path is found.
  */
+
+function sortNodes(a: GraphNode<number>, b: GraphNode<number>) {
+	return a.distance - b.distance
+}
+
 export function shortestDelayedPath(root: GraphNode<number>, target: GraphNode<number>): GraphNode<number> | null {
-	return null
+	const queue = [root]
+	root.visited = true
+	root.distance = root.value
+
+	while(queue.length > 0) {
+		queue.sort(sortNodes)
+		const currentNode = queue.shift()!
+
+		for (const neighbor of currentNode.neighbors) {
+			if (neighbor.visited === false) {
+				neighbor.visited = true
+				if (neighbor.distance === 0 || currentNode.distance + neighbor.value < neighbor.distance) {
+					neighbor.distance = currentNode.distance + neighbor.value
+					neighbor.previous = currentNode
+					queue.push(neighbor)
+				}
+			}
+		}
+	}
+	
+	if (target.previous === null) {
+		return null
+	} else {
+		return target
+	}
 }
