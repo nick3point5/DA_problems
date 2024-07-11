@@ -1,7 +1,7 @@
-import { drawVerticalLinkedList } from "./drawVerticalLinkedList.solution.ts"
+import { drawVerticalLinkedList } from "./drawVerticalLinkedList.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 import { dirname, fromFileUrl } from "https://deno.land/std/path/mod.ts"
-import { linkedList } from "../../../4_nodes_list/2/linkedList/linkedList.solution.ts"
+import { linkedList } from "../../../4_nodes_list/2/linkedList/linkedList.ts"
 
 const directory = dirname(import.meta.url)
 
