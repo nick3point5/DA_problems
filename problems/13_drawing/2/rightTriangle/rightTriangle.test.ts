@@ -1,4 +1,4 @@
-import { rightTriangle } from "./rightTriangle.solution.ts"
+import { rightTriangle } from "./rightTriangle.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("rightTriangle 1", () => {
