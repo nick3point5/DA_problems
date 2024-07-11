@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { square as square } from "./square.ts"
+=======
+import { square3 as square } from "./square.ts"
+>>>>>>> 5dff59b7c4c25cf085b27e31423f07dffa5bbf38
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 
 Deno.test("square 1", () => {

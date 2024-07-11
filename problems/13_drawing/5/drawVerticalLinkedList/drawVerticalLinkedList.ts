@@ -1,5 +1,5 @@
 import { Node } from "../../../4_nodes_list/1/Node/Node.ts"
-import { linkedList } from "../../../4_nodes_list/2/linkedList/linkedList.solution.ts"
+import { linkedList } from "../../../4_nodes_list/2/linkedList/linkedList.js"
 
 /**
  * Draws a linked list as a string representation.
@@ -48,6 +48,21 @@ import { linkedList } from "../../../4_nodes_list/2/linkedList/linkedList.soluti
  * null
  * """
  */
-export function drawVerticalLinkedList() {
-	return null
+export function drawVerticalLinkedList(head: Node<number> | null): string {
+	let stringList: string = ""
+
+	while (head != null) {
+		stringList += head.value.toString()
+		stringList += "\r\n"
+		stringList += "|"
+		stringList += "\r\n"
+		stringList += "v"
+		stringList += "\r\n"
+
+		head = head.next
+	}
+
+	stringList += "null"
+
+	return stringList
 }

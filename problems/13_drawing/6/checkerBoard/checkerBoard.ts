@@ -30,6 +30,6 @@
  * 	#########\n
  * """
  */
-export function checkerBoard() {
+export function checkerBoard(height: number, width: number): string {
 	return null
 }

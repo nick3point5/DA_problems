@@ -1,4 +1,4 @@
-import { checkerBoard } from "./checkerBoard.solution.ts"
+import { checkerBoard } from "./checkerBoard.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 import { dirname, fromFileUrl } from "https://deno.land/std/path/mod.ts"
 
