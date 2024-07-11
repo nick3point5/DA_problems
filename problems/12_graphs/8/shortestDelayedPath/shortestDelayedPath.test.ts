@@ -1,7 +1,7 @@
-import { shortestDelayedPath } from "./shortestDelayedPath.ts"
+import { shortestDelayedPath } from "./shortestDelayedPath.solution.ts"
 import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts"
 import { createGraph } from "../../../../test_utils/createGraph.ts"
-import { GraphNode } from "../../5/GraphNode/GraphNode.ts"
+import { GraphNode } from "../../5/GraphNode/GraphNode.solution.ts"
 
 function getDistance(node: GraphNode<unknown> | null) {
 	let distance = -1
@@ -113,7 +113,7 @@ Deno.test("shortestDelayedPath 4", () => {
 	assertEquals(distance, 6)
 })
 
-Deno.test("shortestDelayedPath 4", () => {
+Deno.test("shortestDelayedPath 5", () => {
 	const grid = [
 		[1, null, 1, 1, 1, 1, 1, 1, 1, 1],
 		[1, null, 1, 1, 1, 1, 1, 1, 1, 1],
@@ -139,7 +139,7 @@ Deno.test("shortestDelayedPath 4", () => {
 	assertEquals(distance, 0)
 })
 
-Deno.test("shortestDelayedPath 5", () => {
+Deno.test("shortestDelayedPath 6", () => {
 	const grid = [
 		[1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 		[100, 100, 100, 100, 100, 100, 100, 100, 100, 1],
